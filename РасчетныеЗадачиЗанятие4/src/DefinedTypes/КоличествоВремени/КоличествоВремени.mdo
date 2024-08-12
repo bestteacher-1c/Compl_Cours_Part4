@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="42fcaad5-190f-4820-abc0-aba02e24b70c">
+  <producedTypes>
+    <containerType typeId="37d9a910-568f-4f49-a279-3f42fa9a8e87" valueTypeId="3163a103-aaac-4233-a58f-845c9c81661a"/>
+  </producedTypes>
+  <name>КоличествоВремени</name>
+  <synonym>
+    <key>ru</key>
+    <value>Количество времени</value>
+  </synonym>
+  <type>
+    <types>Number</types>
+    <numberQualifiers>
+      <precision>7</precision>
+      <scale>2</scale>
+    </numberQualifiers>
+  </type>
+</mdclass:DefinedType>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CalculationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8750847d-33e3-4909-9611-ef3f1c67c49d">
+  <producedTypes>
+    <selectionType typeId="ef2620e5-6eb7-4098-8a58-3feea1d5e6ca" valueTypeId="dab5861d-f227-4f02-8702-0e3e8d56185c"/>
+    <listType typeId="b15c19ed-aea1-443c-aff0-d7d5a36b2ecf" valueTypeId="6f104f3c-08d7-45dc-a4c9-6e962c5e4b7e"/>
+    <managerType typeId="76b0fb89-48b7-4c5a-ba95-679ef0a12e53" valueTypeId="01a96ee4-555c-4823-aafc-86885f895dca"/>
+    <recordSetType typeId="1d9e7716-0cce-467a-bd95-757e990c57c4" valueTypeId="cf11f9fc-d6b6-4db0-889a-a0ec725bbf6e"/>
+    <recordKeyType typeId="04c8f762-38a6-4720-9987-f532ca86bdc7" valueTypeId="2330dd8c-c88f-46dd-a3a2-5257c01805a8"/>
+    <recordType typeId="694ddce6-2a14-4d37-a037-42c6282ad436" valueTypeId="f4a2ca62-78fb-41a7-92ea-48a239dd8d24"/>
+    <recalcsType typeId="419da8c7-13b9-4ed7-b643-53a5ace7326d" valueTypeId="9a68c026-40d9-4d6b-9eaf-8cb4f4a1bf99"/>
+  </producedTypes>
+  <name>Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultListForm>CalculationRegister.Удержания.Form.ФормаСписка</defaultListForm>
+  <periodicity>Month</periodicity>
+  <basePeriod>true</basePeriod>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.Удержания</chartOfCalculationTypes>
+  <resources uuid="07b37aea-9e49-4d7b-98ee-7fb0934ae614">
+    <name>Результат</name>
+    <synonym>
+      <key>ru</key>
+      <value>Результат</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ДенежнаяСумма</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </resources>
+  <attributes uuid="953d65d3-30e0-4d60-b59c-408d65d94e2a">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоложительноеЧисло</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
+  <dimensions uuid="5891769a-563f-4077-abe8-5ee9a4febf8b">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="23c106e8-bfac-4c22-86de-c0279103d0fa">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <dimensions uuid="81a847f1-a895-4863-a02a-d072b1ef8a67">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+  </dimensions>
+  <forms uuid="25653a70-332b-4560-bad4-eb107fcdab1c">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:CalculationRegister>

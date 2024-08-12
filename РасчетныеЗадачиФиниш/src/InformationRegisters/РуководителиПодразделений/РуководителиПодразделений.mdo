@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="99531ae7-35b0-482e-a408-93f5c557f6d3">
+  <producedTypes>
+    <selectionType typeId="b1425061-7a09-4a7b-b74f-cbf2379162da" valueTypeId="1b5b1718-308f-4726-83de-604df0ff8dd4"/>
+    <listType typeId="316bb0f2-3111-4288-ad68-d601e1be1a92" valueTypeId="eb540588-cddf-48dd-b6fe-87d31ca268a1"/>
+    <managerType typeId="6b61598a-0e3c-475d-91b0-8f3f7d607ef9" valueTypeId="5b6e279c-e5c8-46fe-ae2a-e7e9c9036e74"/>
+    <recordSetType typeId="4b790514-8f72-4a7a-8995-fb7ec271470d" valueTypeId="5ac7fd20-4a65-4674-ad9d-11942913e504"/>
+    <recordKeyType typeId="4e16b4a3-a716-43e3-bdb5-3adb3b410d1a" valueTypeId="bb0efe11-3ffe-447b-b003-ef2fe0aff824"/>
+    <recordType typeId="77aa7792-d092-4646-a31a-865dcc9d957d" valueTypeId="9060b32f-7fc8-4739-860b-52e3daae3ebe"/>
+    <recordManagerType typeId="e69d8db1-940f-44be-aa10-2c583b2d3054" valueTypeId="c1d55d53-aaa8-480a-8993-60101005e3e6"/>
+  </producedTypes>
+  <name>РуководителиПодразделений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Руководители подразделений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Month</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <resources uuid="9d337ff1-b514-4f36-aef4-591afa1ef723">
+    <name>Руководитель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Руководитель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="2c75f39b-4b28-4577-8c48-fe259f8b27c6">
+    <name>РазмерПремии</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер премии</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоложительноеЧисло</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="40d2cf54-8472-4aee-b094-cf167310bf7f">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

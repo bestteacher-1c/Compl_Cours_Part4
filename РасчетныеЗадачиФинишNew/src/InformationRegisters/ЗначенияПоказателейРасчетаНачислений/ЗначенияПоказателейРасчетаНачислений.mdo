@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7eda3a68-b3f1-4e81-85dd-e0fb46ed39ab">
+  <producedTypes>
+    <selectionType typeId="712c4074-97b6-4a7e-9fb7-244c9d1bebbc" valueTypeId="1e7a9673-07fa-4600-ae67-99934418e6d0"/>
+    <listType typeId="8b6a0f0c-9e58-4270-bd83-3a4d81fa0f17" valueTypeId="0cead5bb-84aa-4c2d-ac36-4ca83edc9a83"/>
+    <managerType typeId="fa6cad06-ca0c-4f07-a4bb-5d390d8ebecb" valueTypeId="f527a576-cec7-492f-86e6-88586e69aedc"/>
+    <recordSetType typeId="173e833b-2a0c-4c8c-9d29-6ee599f3855d" valueTypeId="887eb20f-bc10-471f-9110-fe03394c950e"/>
+    <recordKeyType typeId="df937025-12fa-4909-b3af-1230470136dd" valueTypeId="fdfee90d-ba2f-481a-bd70-8c5a82abdf35"/>
+    <recordType typeId="6548169c-5152-4c0d-b12e-ac3cd3f983dd" valueTypeId="bd793f03-ebf4-49d4-a6dd-2c1f2de07457"/>
+    <recordManagerType typeId="22338ef0-aadd-46af-82b9-9c8dd430ca7a" valueTypeId="4d1beb72-3d80-4b8e-a33f-9374e619573a"/>
+  </producedTypes>
+  <name>ЗначенияПоказателейРасчетаНачислений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Значения показателей расчета начислений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="03020caa-b9e1-4eda-8c18-165bb556fc46">
+    <name>Значение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоложительноеЧисло</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="4de0310d-121a-44d9-95eb-ff6aeb46f337">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="c6915ac8-31a1-4a53-9173-e6b47e61df3f">
+    <name>ВидРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="031dca5f-0885-404e-a5cd-1df15b5fc8e0">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

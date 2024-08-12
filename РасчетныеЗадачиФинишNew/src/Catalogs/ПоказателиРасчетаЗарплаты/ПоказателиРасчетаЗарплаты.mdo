@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="66bc33e9-0771-42a0-8a41-65524349ffc6">
+  <producedTypes>
+    <objectType typeId="6548faa9-365e-475c-819f-c49bf9df323c" valueTypeId="0a442cc7-5460-474e-85bf-b64e67e337e9"/>
+    <refType typeId="a1ac7fe9-b25e-4406-9cbd-afddace99b40" valueTypeId="0233c118-9028-41fe-9985-9706e139dd57"/>
+    <selectionType typeId="a6777104-7532-404a-a704-d35da1df119d" valueTypeId="dd949e2f-8f68-4b1b-a6c9-88a381c7200c"/>
+    <listType typeId="c59c728d-21d8-46bf-b4e6-bae4e1b6ef91" valueTypeId="19d4f1c1-879a-40cf-99f9-f2a781fea011"/>
+    <managerType typeId="7e605b23-b6e6-4690-9d7c-f7f0e16d678e" valueTypeId="12a53c1a-f940-49bc-a995-ffa4ce9c5b49"/>
+  </producedTypes>
+  <name>ПоказателиРасчетаЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели расчета зарплаты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПоказателиРасчетаЗарплаты.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ПоказателиРасчетаЗарплаты.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="998e0d54-a3a5-465c-9552-68c81dad7600">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ChartOfCalculationTypes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b520534-4c5b-4002-bb5f-80d633e19a8c">
+  <producedTypes>
+    <objectType typeId="242119f3-0b2d-43ca-b5d8-625cde12e1ed" valueTypeId="c1cb86ec-2273-4500-96fe-be2785efb733"/>
+    <refType typeId="d1a31ced-6d14-4c23-a8d8-79d61d85b8d3" valueTypeId="bff4f5ba-0dea-4fdd-8446-2d382d5a9708"/>
+    <selectionType typeId="9b231cbb-61e9-48de-8120-e51dcdabc040" valueTypeId="cba76b4f-7490-4080-a221-eb6cd2b6fdd4"/>
+    <listType typeId="bef943f2-1198-4920-b57f-697b192635a8" valueTypeId="5fb1894d-c0ff-4ee5-868c-c92fdf3c9147"/>
+    <managerType typeId="b7b1ea29-8fad-4a7f-bc63-1918deb8530c" valueTypeId="7fdd6b9e-56b0-45f9-bc2c-433854709c6a"/>
+    <displacingCalculationTypesType typeId="20575474-5fb5-430c-96cb-b2bf0ae36fe5" valueTypeId="6c37fef3-f820-4160-9b81-e328ac00200b"/>
+    <displacingCalculationTypesRowType typeId="f5b782cf-aadc-4820-93e3-7071058b28e0" valueTypeId="f2b23168-98b8-4bb4-ad2d-28e68e44542b"/>
+    <baseCalculationTypesType typeId="dec50c1b-cca2-4ed6-8396-8ea9d461711e" valueTypeId="7497ae6e-4162-415e-958e-30f9ab2d91de"/>
+    <baseCalculationTypesRowType typeId="62586765-3a61-4766-8d86-744073882413" valueTypeId="503bf8ee-13eb-4e0e-bf06-b22621c63b22"/>
+    <leadingCalculationTypesType typeId="61798ddb-f74e-4bad-9c22-76b8e6f410d7" valueTypeId="af9f5fa4-3caa-40ef-9418-533e13b80921"/>
+    <leadingCalculationTypesRowType typeId="13ccbe6b-7aab-4088-8c55-856d57f83bc2" valueTypeId="5444ce38-c5e2-4c94-b787-1d9a8c4b37b9"/>
+  </producedTypes>
+  <name>Удержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ChartOfCalculationTypes.Удержания.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCalculationTypes.Удержания.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>DontUse</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <codeLength>5</codeLength>
+  <descriptionLength>100</descriptionLength>
+  <codeType>String</codeType>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ChartOfCalculationTypes.Удержания.Form.ФормаВидаРасчета</defaultObjectForm>
+  <defaultListForm>ChartOfCalculationTypes.Удержания.Form.ФормаСписка</defaultListForm>
+  <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</baseCalculationTypes>
+  <predefined>
+    <items id="23f852df-8b37-4cfa-886b-b1cc9512a346">
+      <name>УдержаниеПроцентом</name>
+      <description>Удержание процентом</description>
+      <code xsi:type="core:StringValue">
+        <value>00002</value>
+      </code>
+    </items>
+    <items id="ddeee8b8-c074-4cf3-8dd8-a2a3ba2b34da">
+      <name>УдержаниеСуммой</name>
+      <description>Удержание суммой</description>
+      <code xsi:type="core:StringValue">
+        <value>00001</value>
+      </code>
+    </items>
+  </predefined>
+  <attributes uuid="47aa4bbe-9832-49bb-91de-79c262dd9668">
+    <name>СпособРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ расчета</value>
+    </synonym>
+    <type>
+      <types>EnumRef.СпособыРасчета</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="b57a5fba-1971-4815-bcd0-186281976ef4">
+    <name>ТребуетСбораБазы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Требует сбора базы</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="8de7067a-82ff-4623-8242-7f54c8cd9736">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="a26a6d3a-b8d6-4eb5-87d7-1c14af6b19b2">
+    <name>ФормаВидаРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма вида расчета</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ChartOfCalculationTypes>

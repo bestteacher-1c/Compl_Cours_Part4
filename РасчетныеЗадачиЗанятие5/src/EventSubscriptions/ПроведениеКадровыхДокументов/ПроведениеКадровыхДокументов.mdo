@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="96b7402b-f21e-4492-8dd0-531ccce30e5a">
+  <name>ПроведениеКадровыхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проведение кадровых документов</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.КадровоеИзменение</types>
+    <types>DocumentObject.ПриказОбУвольнении</types>
+    <types>DocumentObject.ПриказОПриеме</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.Сервер.ПроведениеКадровыхДокументовОбработкаПроведения</handler>
+</mdclass:EventSubscription>

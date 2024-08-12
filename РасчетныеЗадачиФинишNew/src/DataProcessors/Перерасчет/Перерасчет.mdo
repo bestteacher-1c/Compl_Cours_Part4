@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="28df404e-0c8e-435c-89fe-c8ed53438160">
+  <producedTypes>
+    <objectType typeId="e3c9672e-a1f3-436b-9c3d-8b9c96c50461" valueTypeId="a0b7fdc3-f4d7-4c8f-8c1d-0ed938ab53dd"/>
+    <managerType typeId="3fdeab6d-0962-4f99-8367-44381d41ac4e" valueTypeId="8a0de98d-f07d-4f64-9c22-54d2e3a40608"/>
+  </producedTypes>
+  <name>Перерасчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Перерасчет</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.Перерасчет.Form.Форма</defaultForm>
+  <tabularSections uuid="f5cfedb8-9612-4894-ac02-cdc12e7159d8">
+    <producedTypes>
+      <objectType typeId="796c6c4d-0b03-4af2-97ce-58ece1263295" valueTypeId="8ffb78cf-65c3-467f-b172-bc2454dc214a"/>
+      <rowType typeId="f3a49372-f130-40be-912f-fe745e04e295" valueTypeId="7f8c30b2-10a0-483a-8fd2-ff7557d197b1"/>
+    </producedTypes>
+    <name>СписокЗаписейТребующихПерерасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Список записей требующих перерасчета</value>
+    </synonym>
+    <attributes uuid="e23f3659-dee8-40cb-b90d-5f6669b16107">
+      <name>ОбъектПерерасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Объект перерасчета</value>
+      </synonym>
+      <type>
+        <types>DocumentRef.ПремияРуководителюПодразделения</types>
+        <types>DocumentRef.НачислениеЗарплаты</types>
+        <types>DocumentRef.БольничныйЛист</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="ed306d8f-fa78-4ed3-bc6d-55d85233aab0">
+      <name>ВидРасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
+        <types>ChartOfCalculationTypesRef.ДополнительныеНачисления</types>
+        <types>ChartOfCalculationTypesRef.Удержания</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+    <attributes uuid="97bbabf5-9566-4d79-8691-63ed368bef83">
+      <name>Работник</name>
+      <synonym>
+        <key>ru</key>
+        <value>Работник</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ФизическиеЛица</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <fillValue xsi:type="core:UndefinedValue"/>
+    </attributes>
+  </tabularSections>
+  <forms uuid="2b1a05b6-8fa3-422f-80f7-2641bcd903f9">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

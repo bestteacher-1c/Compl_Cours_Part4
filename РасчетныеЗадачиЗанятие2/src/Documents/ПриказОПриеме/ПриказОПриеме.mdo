@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="813296c8-04fb-41f4-85e7-c84e4d7dff7a">
+  <producedTypes>
+    <objectType typeId="dcc4be43-4426-4ea8-a1e2-0ec2ef8a9134" valueTypeId="461eed8d-67f0-47f1-8894-447e9ad6ac76"/>
+    <refType typeId="9c8ce7fc-ecdb-444e-a769-c6e59cff4615" valueTypeId="caeb2501-46db-4216-b371-0af4a8ab204f"/>
+    <selectionType typeId="a4f0b2cb-e762-4958-9f28-e2fe819a1bbb" valueTypeId="f0179002-24ba-48cc-a169-0fe91f177b5d"/>
+    <listType typeId="9cc58bab-9ad3-46c7-90a7-52a97e0f4a5a" valueTypeId="f4e70035-91a4-430d-8b59-4bab96f4b3ff"/>
+    <managerType typeId="5a1d5cf9-852f-4220-8f46-b7e9e53d81a1" valueTypeId="a328d9bf-5e8f-481e-bb5f-2086253d458a"/>
+  </producedTypes>
+  <name>ПриказОПриеме</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приказ о приеме на работу</value>
+  </synonym>
+  <comment>Приказ о приеме на работу</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриказОПриеме.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <numerator>DocumentNumerator.Кадровый</numerator>
+  <numberType>String</numberType>
+  <numberLength>5</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.Сотрудники</registerRecords>
+  <attributes uuid="fee19ec6-5df2-4ec5-a32c-3c06988de361">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4481a8aa-b5d7-4687-9f7a-334a94481169">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3aae0470-69b9-4158-be67-466af80dfcea">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fa107a54-d32d-4f8e-81a1-2063ea432fbd">
+    <name>ДатаСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата события</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7cb3f67a-a926-4274-b908-8b2b0932b6a0">
+    <name>ГрафикРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>График работы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыГрафиковРабот</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Document>

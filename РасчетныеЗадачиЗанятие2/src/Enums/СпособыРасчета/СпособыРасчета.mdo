@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f1f177a8-8135-49b8-a6ab-8ff57aa9d80f">
+  <producedTypes>
+    <refType typeId="abdc61b5-cdd4-4f6f-b634-41b3bfa5f002" valueTypeId="35f702df-a54e-4ada-9029-1127f52beade"/>
+    <listType typeId="58439f26-7535-4bf6-804b-4401f0f99026" valueTypeId="01965e6c-db44-408f-96a5-45245f98c912"/>
+    <managerType typeId="f099f367-5fb6-4683-96c9-7c76c52afa8a" valueTypeId="99c699ec-ac73-4e17-9a1f-65592e63afbd"/>
+  </producedTypes>
+  <name>СпособыРасчета</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы расчета</value>
+  </synonym>
+  <quickChoice>true</quickChoice>
+  <choiceMode>QuickChoice</choiceMode>
+  <enumValues uuid="28bf5e7e-ff90-4d7e-a19a-99e0ba370dda">
+    <name>ПоМесячнойТарифнойСтавкеПоДням</name>
+    <synonym>
+      <key>ru</key>
+      <value>По месячной тарифной ставке по дням</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="040bb910-4741-40e8-975c-b908d2be6495">
+    <name>Процентом</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процентом</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="39ee152c-3c93-4135-82d8-1fc58e456062">
+    <name>ФиксированнойСуммой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Фиксированной суммой</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="814fa78d-416e-44e3-8f34-056529577073">
+    <name>ПоСреднемуЗаработку</name>
+    <synonym>
+      <key>ru</key>
+      <value>По среднему заработку</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="640280ad-ce6b-4a38-a5a6-e3e61dfc5419">
+    <name>НулеваяСумма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Нулевая сумма</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="bf524026-8130-47cd-95a4-9eee3eb2d6f3">
+    <name>ПоФормуле</name>
+    <synonym>
+      <key>ru</key>
+      <value>По формуле</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="35212c0c-7d12-45fe-9a31-2ba7b5fe5812">
+    <name>КомпенсацияЗаДень</name>
+    <synonym>
+      <key>ru</key>
+      <value>Компенсация за день</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

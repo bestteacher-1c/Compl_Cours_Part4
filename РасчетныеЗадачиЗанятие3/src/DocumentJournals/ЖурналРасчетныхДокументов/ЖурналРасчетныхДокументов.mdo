@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3113d4d7-b924-40ff-8643-74ae45ee25b9">
+  <producedTypes>
+    <selectionType typeId="a4f99912-26ec-468a-98c2-eaeab2931aa8" valueTypeId="58a7cedd-eb71-46d4-8ab2-bc9ff5ad1bef"/>
+    <listType typeId="469b85f4-1bb9-4d9d-a329-5ec9fb7cffeb" valueTypeId="fa0b43bf-1bcc-432b-81e1-e32f95e29dd5"/>
+    <managerType typeId="540d5b22-2835-46d3-8076-c49c12991c8f" valueTypeId="7f94c489-fc88-440a-a2a7-ebbb07e2d2c5"/>
+  </producedTypes>
+  <name>ЖурналРасчетныхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал расчетных документов</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ЖурналРасчетныхДокументов.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.БольничныйЛист</registeredDocuments>
+  <registeredDocuments>Document.НачислениеЗарплаты</registeredDocuments>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Type</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Date</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Posted</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Number</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <columns uuid="7fe9838f-cca3-4440-a9a0-ddb4d36677f4">
+    <name>ПериодРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период регистрации</value>
+    </synonym>
+    <references>Document.БольничныйЛист.Attribute.ПериодРегистрации</references>
+    <references>Document.НачислениеЗарплаты.Attribute.ПериодРегистрации</references>
+  </columns>
+  <columns uuid="3830a9a6-dbe3-43af-a786-1698996e3c40">
+    <name>Работник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работник</value>
+    </synonym>
+    <references>Document.БольничныйЛист.Attribute.ФизическоеЛицо</references>
+  </columns>
+  <forms uuid="65abda13-e5d9-4229-a4e8-eab15a2c32af">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="813296c8-04fb-41f4-85e7-c84e4d7dff7a">
+  <producedTypes>
+    <objectType typeId="dcc4be43-4426-4ea8-a1e2-0ec2ef8a9134" valueTypeId="461eed8d-67f0-47f1-8894-447e9ad6ac76"/>
+    <refType typeId="9c8ce7fc-ecdb-444e-a769-c6e59cff4615" valueTypeId="caeb2501-46db-4216-b371-0af4a8ab204f"/>
+    <selectionType typeId="a4f0b2cb-e762-4958-9f28-e2fe819a1bbb" valueTypeId="f0179002-24ba-48cc-a169-0fe91f177b5d"/>
+    <listType typeId="9cc58bab-9ad3-46c7-90a7-52a97e0f4a5a" valueTypeId="f4e70035-91a4-430d-8b59-4bab96f4b3ff"/>
+    <managerType typeId="5a1d5cf9-852f-4220-8f46-b7e9e53d81a1" valueTypeId="a328d9bf-5e8f-481e-bb5f-2086253d458a"/>
+  </producedTypes>
+  <name>ПриказОПриеме</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приказ о приеме на работу</value>
+  </synonym>
+  <comment>Приказ о приеме на работу</comment>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриказОПриеме.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <numerator>DocumentNumerator.Кадровый</numerator>
+  <numberType>String</numberType>
+  <numberLength>5</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПриказОПриеме.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.ПлановыеОсновныеНачисления</registerRecords>
+  <registerRecords>InformationRegister.Сотрудники</registerRecords>
+  <registerRecords>InformationRegister.ПлановыеУдержания</registerRecords>
+  <registerRecords>InformationRegister.ПлановыеДополнительныеНачисления</registerRecords>
+  <attributes uuid="fee19ec6-5df2-4ec5-a32c-3c06988de361">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4481a8aa-b5d7-4687-9f7a-334a94481169">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3aae0470-69b9-4158-be67-466af80dfcea">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="fa107a54-d32d-4f8e-81a1-2063ea432fbd">
+    <name>ДатаСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата события</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="7cb3f67a-a926-4274-b908-8b2b0932b6a0">
+    <name>ГрафикРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>График работы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыГрафиковРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="2db84933-40e6-4058-84a3-1ff44563c35c">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="35c84982-8fa9-462b-8814-fedafab2fba1">
+    <producedTypes>
+      <objectType typeId="ecd00cc9-6f82-40af-bbfb-8556d031dcdc" valueTypeId="e32d00e5-a7bc-406d-a857-903347ab080b"/>
+      <rowType typeId="81add662-06fe-4bb8-ade4-ed5f5c915069" valueTypeId="879a02fe-48d7-4790-982d-4992bf53dfaf"/>
+    </producedTypes>
+    <name>ОсновныеНачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Основные начисления</value>
+    </synonym>
+    <attributes uuid="e704f0bd-39f7-47bc-90b3-6bd8c0ecc962">
+      <name>ВидРасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="566244df-a54e-4363-a77d-f1b92f09c4fb">
+      <name>Размер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Размер</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ПоложительноеЧисло</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="8c47724f-5885-419f-8cc2-8d1c8182385f">
+    <producedTypes>
+      <objectType typeId="50c07ac5-acee-4ba4-b910-1a0db5ca6039" valueTypeId="0684e14c-00bb-41df-88dd-5eb49cd0aa61"/>
+      <rowType typeId="71d3504e-f770-4700-b490-714517b418d8" valueTypeId="3ca12954-a1a2-4e88-a0e6-4aaa0fd63a93"/>
+    </producedTypes>
+    <name>ДополнительныеНачисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные начисления</value>
+    </synonym>
+    <attributes uuid="b742a2f3-70ae-416e-9b7f-f2d67b93bbf6">
+      <name>ВидРасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.ДополнительныеНачисления</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="adace635-80c2-47bc-a4f3-6ee881c4188a">
+      <name>Размер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Размер</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ПоложительноеЧисло</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="fa7c2409-cb7b-4f31-96ee-c4a2b985d49a">
+    <producedTypes>
+      <objectType typeId="98025e89-7e03-456d-ba39-c804ea6581ff" valueTypeId="85ca0664-7ac2-4be3-b7de-116180ae60f3"/>
+      <rowType typeId="66bac5db-6aaa-46f5-92a8-29cf5fd162dc" valueTypeId="3610d85f-9cdf-4b34-ba16-da47e26c48eb"/>
+    </producedTypes>
+    <name>Удержания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удержания</value>
+    </synonym>
+    <attributes uuid="d05bb203-7e54-499e-8a76-e5a24fc01819">
+      <name>ВидРасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.Удержания</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="928d7927-2a2c-4d50-99ab-538a83d716ff">
+      <name>Размер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Размер</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ПоложительноеЧисло</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+</mdclass:Document>

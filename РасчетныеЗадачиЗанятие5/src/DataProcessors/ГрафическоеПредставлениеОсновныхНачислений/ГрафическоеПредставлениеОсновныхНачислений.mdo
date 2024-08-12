@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9cb47b55-16cf-421a-a2db-2e263b1c8611">
+  <producedTypes>
+    <objectType typeId="9cc0c4bd-444c-4c28-9828-335929ce5231" valueTypeId="f15cbfc2-938e-4ed8-ae69-10e8fc431077"/>
+    <managerType typeId="64871290-fed2-4a74-8b16-9570510d54ba" valueTypeId="11d5668c-5ebb-4baa-9a12-89eae121c807"/>
+  </producedTypes>
+  <name>ГрафическоеПредставлениеОсновныхНачислений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Графическое представление основных начислений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.ГрафическоеПредставлениеОсновныхНачислений.Form.ФормаУправляемая</defaultForm>
+  <auxiliaryForm>DataProcessor.ГрафическоеПредставлениеОсновныхНачислений.Form.ФормаУправляемая</auxiliaryForm>
+  <forms uuid="2c3e2b8b-3a33-41dd-92c9-d02d21d11f20">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <formType>Ordinary</formType>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="84968eba-93be-4321-be95-748fc471197e">
+    <name>ФормаУправляемая</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма управляемая</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DataProcessor>

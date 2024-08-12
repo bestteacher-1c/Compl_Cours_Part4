@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9feaf9ac-04b9-4844-a56a-c9f0959d5508">
+  <producedTypes>
+    <selectionType typeId="a77ef21e-3325-4606-ad4d-55255366de53" valueTypeId="04e047bb-cae8-46e0-ac32-364269249242"/>
+    <listType typeId="5e5a4980-e47c-4f19-9612-19997458d3cb" valueTypeId="a82321bf-2c41-44c7-a793-b9c67a74ffe5"/>
+    <managerType typeId="dafce570-1787-41b2-a673-fc6ae4eea192" valueTypeId="9423f7d4-16f1-4207-b38d-3bd5abc7459d"/>
+  </producedTypes>
+  <name>ЖурналКадровыхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал кадровых документов</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ЖурналКадровыхДокументов.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.ПриказОПриеме</registeredDocuments>
+  <registeredDocuments>Document.ПриказОбУвольнении</registeredDocuments>
+  <registeredDocuments>Document.КадровоеИзменение</registeredDocuments>
+  <columns uuid="acc4cfe5-76f4-4f97-b4ed-2b6501bdfe16">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <references>Document.ПриказОбУвольнении.Attribute.ФизическоеЛицо</references>
+    <references>Document.ПриказОПриеме.Attribute.ФизическоеЛицо</references>
+    <references>Document.КадровоеИзменение.Attribute.ФизическоеЛицо</references>
+  </columns>
+  <columns uuid="2436eba9-c596-4bb6-b137-6b47ca01e2aa">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <references>Document.ПриказОбУвольнении.Attribute.Подразделение</references>
+    <references>Document.ПриказОПриеме.Attribute.Подразделение</references>
+    <references>Document.КадровоеИзменение.Attribute.Подразделение</references>
+  </columns>
+  <columns uuid="9f61d8fd-24d3-4840-b52c-bcf36d36722f">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <references>Document.ПриказОбУвольнении.Attribute.Должность</references>
+    <references>Document.ПриказОПриеме.Attribute.Должность</references>
+    <references>Document.КадровоеИзменение.Attribute.Должность</references>
+  </columns>
+  <columns uuid="7f471f8c-73ee-47fa-99b5-b580dcc5fa27">
+    <name>ДатаВступленияВСилу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата вступления в силу</value>
+    </synonym>
+    <references>Document.ПриказОбУвольнении.Attribute.ДатаСобытия</references>
+    <references>Document.ПриказОПриеме.Attribute.ДатаСобытия</references>
+    <references>Document.КадровоеИзменение.Attribute.ДатаСобытия</references>
+  </columns>
+  <forms uuid="010ef616-c1b5-4782-aef1-c1309757e708">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

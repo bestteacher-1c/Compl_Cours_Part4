@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="eea4e5df-0bc5-4bb2-9cd6-e44785d81366">
+  <producedTypes>
+    <managerType typeId="991d4a41-40da-4044-9339-c8f303129ffb" valueTypeId="149193be-414f-4220-8525-16f4a17e9eb8"/>
+    <valueManagerType typeId="e546e77a-d431-41dc-81d6-0d9d9c27d22f" valueTypeId="0c55ef05-5dc2-4c63-8761-5485746e282b"/>
+    <valueKeyType typeId="bd787e22-a862-5c80-81b8-c51b1c187e5a" valueTypeId="99e88a46-8f8e-5403-be3e-bf9d4d71bd8d"/>
+  </producedTypes>
+  <name>Активация</name>
+  <synonym>
+    <key>ru</key>
+    <value>Активация</value>
+  </synonym>
+  <type>
+    <types>Boolean</types>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+</mdclass:Constant>

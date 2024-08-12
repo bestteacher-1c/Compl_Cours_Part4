@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DocumentJournal xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="466da500-0a04-443e-a753-fa5c7d4eea2f">
+  <producedTypes>
+    <selectionType typeId="b41066ca-607c-4529-96a5-712954966529" valueTypeId="8fb4900f-b84b-4787-b8dc-1e49f3d60b4f"/>
+    <listType typeId="2a71b388-1e5d-4e7e-b63d-b432e35dd47b" valueTypeId="12f18756-f28f-450c-949e-6dd67e7305ec"/>
+    <managerType typeId="ef3afb6a-6344-48fd-baa3-68519411d3c9" valueTypeId="0f4268f5-4a18-41f5-923c-48dcd36bf8a3"/>
+  </producedTypes>
+  <name>ЖурналРасчетныхДокументов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Журнал расчетных документов</value>
+  </synonym>
+  <defaultForm>DocumentJournal.ЖурналРасчетныхДокументов.Form.ФормаСписка</defaultForm>
+  <useStandardCommands>true</useStandardCommands>
+  <registeredDocuments>Document.НачислениеЗарплаты</registeredDocuments>
+  <registeredDocuments>Document.БольничныйЛист</registeredDocuments>
+  <registeredDocuments>Document.ПремияРуководителюПодразделения</registeredDocuments>
+  <columns uuid="1bc26466-0ae1-4191-ac45-674dd98d90b7">
+    <name>ПериодРегистрации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Период регистрации</value>
+    </synonym>
+    <references>Document.НачислениеЗарплаты.Attribute.ПериодРегистрации</references>
+    <references>Document.БольничныйЛист.Attribute.ПериодРегистрации</references>
+    <references>Document.ПремияРуководителюПодразделения.Attribute.ПериодРегистрации</references>
+  </columns>
+  <columns uuid="6f482649-3eb9-49da-95d5-776dc4a7191b">
+    <name>Работник</name>
+    <synonym>
+      <key>ru</key>
+      <value>Работник</value>
+    </synonym>
+    <references>Document.БольничныйЛист.Attribute.ФизическоеЛицо</references>
+    <references>Document.ПремияРуководителюПодразделения.Attribute.ФизическоеЛицо</references>
+  </columns>
+  <forms uuid="4e7e7369-b1c4-4b24-91a8-deaaa17521ab">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:DocumentJournal>

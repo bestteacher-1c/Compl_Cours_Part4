@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="aef6ce8d-8f66-4c3d-bca4-ff918dba5bd1">
+  <name>РасчетныеЗадачи</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчетные задачи (Занятие 1)</value>
+  </synonym>
+  <comment>Занятие 1</comment>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="9da95f28-aa36-447f-a71e-aa3cb6220317"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="7fff94bd-050e-41cf-bcb9-feab642872ca"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="9b684f86-c896-48a1-b456-12b7f66e497f"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="b94e6b71-61f1-4a6f-a4dc-34866b754372"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="215a25f7-1edd-4b51-b71a-56f02f6cc3d6"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="55967bcd-23f0-4251-8053-aca98cbb01a7"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="78e0d31c-4e9d-4c97-bee7-1dd75d75f979"/>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <useManagedFormInOrdinaryApplication>true</useManagedFormInOrdinaryApplication>
+  <useOrdinaryFormInManagedApplication>true</useOrdinaryFormInManagedApplication>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <mainSectionPicture/>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <interfaceCompatibilityMode>TaxiEnableVersion8_2</interfaceCompatibilityMode>
+  <compatibilityMode>8.3.24</compatibilityMode>
+  <languages uuid="32a9ad07-27d3-4bfc-b639-6f7887ee885e">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.Расчет</subsystems>
+  <subsystems>Subsystem.Кадры</subsystems>
+  <commonPictures>CommonPicture.ПланыВидовРасчета</commonPictures>
+  <commonPictures>CommonPicture.Справочники</commonPictures>
+  <commonPictures>CommonPicture.Документы</commonPictures>
+  <commonPictures>CommonPicture.Сервис</commonPictures>
+  <commonPictures>CommonPicture.ФоновыйПроцесс</commonPictures>
+  <commonModules>CommonModule.Сервер</commonModules>
+  <eventSubscriptions>EventSubscription.ПроведениеКадровыхДокументов</eventSubscriptions>
+  <definedTypes>DefinedType.ПоложительноеЧисло</definedTypes>
+  <definedTypes>DefinedType.ДенежнаяСумма</definedTypes>
+  <definedTypes>DefinedType.КоличествоВремени</definedTypes>
+  <catalogs>Catalog.ФизическиеЛица</catalogs>
+  <catalogs>Catalog.Подразделения</catalogs>
+  <catalogs>Catalog.Должности</catalogs>
+  <catalogs>Catalog.ВидыГрафиковРабот</catalogs>
+  <documents>Document.ПриказОПриеме</documents>
+  <documents>Document.КадровоеИзменение</documents>
+  <documents>Document.ПриказОбУвольнении</documents>
+  <documents>Document.НачислениеЗарплаты</documents>
+  <documentNumerators>DocumentNumerator.Кадровый</documentNumerators>
+  <documentJournals>DocumentJournal.ЖурналКадровыхДокументов</documentJournals>
+  <enums>Enum.СостоянияФизическогоЛица</enums>
+  <dataProcessors>DataProcessor.ИнструментыРазработчикаКонсольЗапросов</dataProcessors>
+  <dataProcessors>DataProcessor.КонсольЗапросов</dataProcessors>
+  <informationRegisters>InformationRegister.Сотрудники</informationRegisters>
+  <informationRegisters>InformationRegister.ГрафикиРаботы</informationRegisters>
+</mdclass:Configuration>

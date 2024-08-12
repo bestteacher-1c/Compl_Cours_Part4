@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cfb100bf-f966-440c-a858-8562955f5c3a">
+  <producedTypes>
+    <objectType typeId="56c1dd2f-07c8-477b-9265-8f7ca709600d" valueTypeId="c655cac2-91b7-4d17-9fd1-53e4d98e83be"/>
+    <refType typeId="cc76b23f-1df0-40ee-af0d-25e750763198" valueTypeId="2f1e2198-b63c-47c4-adcd-31335b883f95"/>
+    <selectionType typeId="9bfa28b5-5390-4dee-aaea-73a256dd5038" valueTypeId="3ec68507-63c1-4452-9ce3-4f1fa90ed70a"/>
+    <listType typeId="7e20c4ba-0718-4d6b-a04f-80a3c0ec9245" valueTypeId="b142290d-dced-4660-bd9d-f7a5a5986fcf"/>
+    <managerType typeId="55a05c9a-6dc8-4535-8cca-f5369040ba8f" valueTypeId="f46603b2-b6ad-4286-90da-d81354aff84b"/>
+  </producedTypes>
+  <name>ПриказОбУвольнении</name>
+  <synonym>
+    <key>ru</key>
+    <value>Приказ об увольнении</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Document.ПриказОбУвольнении.StandardAttribute.Number</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <basedOn>Document.ПриказОПриеме</basedOn>
+  <createOnInput>Use</createOnInput>
+  <fullTextSearch>Use</fullTextSearch>
+  <numerator>DocumentNumerator.Кадровый</numerator>
+  <numberType>String</numberType>
+  <numberLength>5</numberLength>
+  <numberPeriodicity>Year</numberPeriodicity>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПриказОбУвольнении.Form.ФормаДокумента</defaultObjectForm>
+  <realTimePosting>Deny</realTimePosting>
+  <registerRecords>InformationRegister.ПлановыеОсновныеНачисления</registerRecords>
+  <registerRecords>InformationRegister.Сотрудники</registerRecords>
+  <registerRecords>InformationRegister.ПлановыеУдержания</registerRecords>
+  <registerRecords>InformationRegister.ПлановыеДополнительныеНачисления</registerRecords>
+  <attributes uuid="6edb19ca-11dc-4f79-beef-7dec71bab760">
+    <name>ПриказОПриеме</name>
+    <synonym>
+      <key>ru</key>
+      <value>Приказ о приеме</value>
+    </synonym>
+    <type>
+      <types>DocumentRef.ПриказОПриеме</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4c9089e1-4a76-459e-b132-d1834315d124">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d75d1dd0-962f-4007-b634-55258e20ec9d">
+    <name>Подразделение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подразделение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Подразделения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3f280309-aabb-4f7b-be48-72bcc2ce87c0">
+    <name>Должность</name>
+    <synonym>
+      <key>ru</key>
+      <value>Должность</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Должности</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8700aef8-16d4-4c9c-8eab-f7bed49e1b5c">
+    <name>ДатаСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата события</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="ca6bd963-7e1f-4b15-9b06-8ba996253105">
+    <name>ФормаДокумента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма документа</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:Document>

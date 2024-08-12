@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="7ff3aed6-72d0-4f39-824d-1362d17a87b6">
+  <producedTypes>
+    <selectionType typeId="cdb84fb5-8516-41da-941d-3c78c8c3e92a" valueTypeId="80579d75-30cc-41ba-96d4-ab9a658acd2b"/>
+    <listType typeId="82fb271c-7748-46cd-991b-7c621af45682" valueTypeId="f5d49e68-5d99-4545-917b-43df71034392"/>
+    <managerType typeId="23b9ab6a-899c-449e-bf0e-03e1d291edaa" valueTypeId="d206cbb9-31e7-4568-8ce8-a6f2bc07f992"/>
+    <recordSetType typeId="5c180f0e-373f-4be8-a639-c4c56c22c20f" valueTypeId="0b8994e3-e53b-4f88-86f1-d15aaa29079a"/>
+    <recordKeyType typeId="03703e07-2f7b-4062-8f08-79cbcfda6476" valueTypeId="ddf9c632-720b-4b33-909c-96fa3fb45751"/>
+    <recordType typeId="e8e6bcaa-6063-44db-ad81-bab3c4c4d56f" valueTypeId="f5b3d9f6-a58b-41eb-a527-36830d68c3fe"/>
+    <recordManagerType typeId="7ece84c8-6612-4546-9bb7-fd09a4de0b20" valueTypeId="8072e2d1-8f83-4ae2-bed6-37e023307fb2"/>
+  </producedTypes>
+  <name>ПлановыеДополнительныеНачисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Плановые дополнительные начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <resources uuid="57281651-5ed0-4dda-81c3-bd4d5d64a592">
+    <name>Размер</name>
+    <synonym>
+      <key>ru</key>
+      <value>Размер</value>
+    </synonym>
+    <type>
+      <types>DefinedType.ПоложительноеЧисло</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="e53e177d-7914-4e27-a6e9-6bbfcb7347a4">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="074b7bee-d30b-4257-9d54-4aefd4b71c7f">
+    <name>ВидРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.ДополнительныеНачисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

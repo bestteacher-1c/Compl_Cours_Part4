@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="706f6d90-7893-4a24-8fa2-6069ea9a76de">
+  <name>ПрочиеОбъекты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Прочие объекты</value>
+  </synonym>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <parentSubsystem>Subsystem.Расчет</parentSubsystem>
+</mdclass:Subsystem>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1b2b4c13-72bb-49d5-a40d-c967410dff48">
+  <producedTypes>
+    <selectionType typeId="da09fc82-5cf9-4b08-b8ac-14f821f352b8" valueTypeId="6140bfd9-64e7-48db-b786-1cba28345ac3"/>
+    <listType typeId="93c074f9-a0d9-4d56-b6b2-5a802c12107e" valueTypeId="066f7652-8eff-4285-b1a8-a46e3b92823f"/>
+    <managerType typeId="4604b069-11e6-4a05-8639-67e8009b16e8" valueTypeId="c9e10866-f7c4-48a1-9ef6-cdefa5453e59"/>
+    <recordSetType typeId="98d1e721-62ed-41a2-85e7-547b15c9886c" valueTypeId="f0847a4d-c8a0-495d-8684-13fc6383d6dd"/>
+    <recordKeyType typeId="8a9174eb-ddd4-4cda-b74d-bff203f12c94" valueTypeId="659d3167-5dc9-490b-8bf1-51996355030f"/>
+    <recordType typeId="5fe9f4f7-5471-42de-9123-d89e9af42612" valueTypeId="75bdd7b8-ea76-4b13-87d8-f453e7df4265"/>
+    <recordManagerType typeId="d9dc1fdf-e653-4d98-a361-61cc62481ffb" valueTypeId="9225fb87-9fe6-41f3-8c7a-31db1219f62d"/>
+  </producedTypes>
+  <name>ГрафикиРаботы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Графики работы</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <listPresentation>
+    <key>ru</key>
+    <value>Календарь графиков работы</value>
+  </listPresentation>
+  <extendedListPresentation>
+    <key>ru</key>
+    <value>Календарь графиков работы</value>
+  </extendedListPresentation>
+  <resources uuid="83adeca1-a4c7-4653-88a4-e5ef6fca3497">
+    <name>ЗначениеДни</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение дни</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="e4980a50-e46f-416a-bd00-f16d68f92890">
+    <name>ЗначениеЧасы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Значение часы</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>7</precision>
+        <scale>2</scale>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <dimensions uuid="cdd6fcc8-0943-4358-b6e7-057cb220230f">
+    <name>Дата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="faadfb3e-4eca-411b-8a0f-5a0d812f13ec">
+    <name>ГрафикРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>График работы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыГрафиковРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

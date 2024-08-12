@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e0caba3d-d470-4498-b00f-f1728b1911fc">
+  <name>ЗаполнениеНовогоДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>Заполнение нового документа</value>
+  </synonym>
+  <source>
+    <types>DocumentObject.БольничныйЛист</types>
+    <types>DocumentObject.НачислениеЗарплаты</types>
+    <types>DocumentObject.ПремияРуководителюПодразделения</types>
+  </source>
+  <event>Filling</event>
+  <handler>CommonModule.Серверный.ЗаполнениеНовогоДокументаОбработкаЗаполнения</handler>
+</mdclass:EventSubscription>

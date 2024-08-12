@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="260f730e-2302-4101-b681-f12a1c7f9fba">
+  <producedTypes>
+    <selectionType typeId="5a3bd7cc-764b-4d27-babe-00d36197c60f" valueTypeId="d81bd895-df93-4c42-ad36-66640f916add"/>
+    <listType typeId="cc059be8-d857-473f-8254-096c4a8e3df6" valueTypeId="65540fbd-3135-427e-9dd9-165705d3f44a"/>
+    <managerType typeId="98049f4a-d5f9-41d7-8c2f-95cd3b754389" valueTypeId="a91875ac-d80d-4979-a197-3f60307ea979"/>
+    <recordSetType typeId="e46ee70b-e5a4-4551-b228-d536a1cf2a99" valueTypeId="95a8f39a-2403-4536-94e4-a398c80cdf2d"/>
+    <recordKeyType typeId="dc5c8074-efad-4e74-b29c-b63935eb108b" valueTypeId="17af8203-6dc5-4cd1-981f-c28d2f4dc13b"/>
+    <recordType typeId="3db3832c-00be-46c8-b7ec-a631899fe4fe" valueTypeId="159dedf2-1344-4a7c-97cc-7a2068c691ad"/>
+    <recordManagerType typeId="345ac1f7-8ab3-46e4-8f0b-5f0593a1be0d" valueTypeId="7ee334b6-794b-4933-9a9a-ed8a47437d9a"/>
+  </producedTypes>
+  <name>ПлановыеНачисления</name>
+  <synonym>
+    <key>ru</key>
+    <value>Плановые начисления</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <informationRegisterPeriodicity>Second</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <dimensions uuid="7f16546f-d69d-4038-b8bf-0d2329f54454">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="519389fd-ccf0-43f7-9ba3-2994efaec6ed">
+    <name>ВидРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="b3f670e0-2c1c-4506-aaf3-cc19caef7aae">
+    <name>НачислениеДействует</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начисление действует</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

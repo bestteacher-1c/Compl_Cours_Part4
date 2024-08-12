@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b9e399d-e476-4593-a7cc-7abfaa96e992">
+  <name>Расчет</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчет</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.Документы</picture>
+  </picture>
+  <content>DataProcessor.ИнструментыРазработчикаКонсольЗапросов</content>
+  <content>CalculationRegister.ОсновныеНачисления</content>
+  <content>CalculationRegister.ДополнительныеНачисления</content>
+  <content>CalculationRegister.Удержания</content>
+  <subsystems>Документы</subsystems>
+  <subsystems>ПланыВидовРасчета</subsystems>
+  <subsystems>Справочники</subsystems>
+</mdclass:Subsystem>

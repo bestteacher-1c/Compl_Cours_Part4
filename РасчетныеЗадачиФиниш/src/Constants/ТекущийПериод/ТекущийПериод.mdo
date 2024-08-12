@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3820a2fa-ddc1-4cdc-b7fb-ec92272ae4f1">
+  <producedTypes>
+    <managerType typeId="f8c93816-a9b2-4833-8bbc-5dcbacb406e0" valueTypeId="a6e9c745-92ef-430b-b91f-33bad470e896"/>
+    <valueManagerType typeId="3aa9f735-c953-4392-acbf-b17e9ece6e42" valueTypeId="7da7fa2d-cbe1-4de6-b3df-44912d14f888"/>
+    <valueKeyType typeId="13fb56a8-b140-5686-9d58-a2601460b953" valueTypeId="1ddbcd57-1de7-5af6-b1d0-3d17def506c3"/>
+  </producedTypes>
+  <name>ТекущийПериод</name>
+  <synonym>
+    <key>ru</key>
+    <value>Текущий период</value>
+  </synonym>
+  <type>
+    <types>Date</types>
+    <dateQualifiers>
+      <dateFractions>Date</dateFractions>
+    </dateQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+</mdclass:Constant>

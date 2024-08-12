@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8ab11004-2d45-4400-be3a-307db2dba2da">
+  <producedTypes>
+    <selectionType typeId="d9d6cab0-440b-46bb-87aa-8b37994d7683" valueTypeId="6a53acfe-0c95-4745-9dac-6835f3e38e79"/>
+    <listType typeId="284ac503-d860-41c4-81d4-9de896553a87" valueTypeId="3f73915e-cfc5-4cda-b41f-9ecdaf586ba7"/>
+    <managerType typeId="36d3328c-7db3-4bf5-8d0c-d5d12631e604" valueTypeId="103c6768-3a8f-40fe-a9db-eb19bdbcc600"/>
+    <recordSetType typeId="df638217-47b5-4a6a-b87b-9d529b391f9f" valueTypeId="3eb0a2da-4aa7-4114-90b1-29c9807684cf"/>
+    <recordKeyType typeId="3de91e4b-7a67-45dd-8734-fd014cb65f8f" valueTypeId="00a31747-2b5d-48e4-87a4-bf2b1a3826cb"/>
+    <recordType typeId="14960911-86a4-426d-b7dc-d6dcd0dde3b4" valueTypeId="b5bb6fc1-b0ed-4557-b9d8-b2dc0ccc9ad5"/>
+    <recordManagerType typeId="4f5de19c-0f69-41f4-ab92-7ca0497de97c" valueTypeId="9dca87ff-5d39-4641-bc55-c568ab90cf9c"/>
+  </producedTypes>
+  <name>ПлановыеУдержания</name>
+  <synonym>
+    <key>ru</key>
+    <value>Плановые удержания</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <writeMode>RecorderSubordinate</writeMode>
+  <dimensions uuid="47a8aa51-9955-425f-97fd-fdc4928b0a0c">
+    <name>ФизическоеЛицо</name>
+    <synonym>
+      <key>ru</key>
+      <value>Физическое лицо</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ФизическиеЛица</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="e3df9c24-78fd-4c5c-921c-f7d68119743c">
+    <name>ВидРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.Удержания</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="4476fcc0-6e45-4770-b81d-3297e55282d4">
+    <name>УдержаниеДействует</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удержание действует</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>
