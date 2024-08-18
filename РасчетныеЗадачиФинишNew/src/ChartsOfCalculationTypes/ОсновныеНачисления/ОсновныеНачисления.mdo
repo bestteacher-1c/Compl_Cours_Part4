@@ -103,29 +103,6 @@
       <code xsi:type="core:StringValue">
         <value>00013</value>
       </code>
-      <base>ChartOfCalculationTypes.ОсновныеНачисления.ОкладПоДням</base>
-    </items>
-    <items id="ea231872-8b9f-45f9-bffc-1d0e08d20f99">
-      <name>ДоплатаЗаВредность</name>
-      <description>Доплата за вредность</description>
-      <code xsi:type="core:StringValue">
-        <value>00002</value>
-      </code>
-    </items>
-    <items id="12f094e9-4a25-44cb-9969-a55a83e57c92">
-      <name>ОкладПоДням</name>
-      <description>Оклад по дням</description>
-      <code xsi:type="core:StringValue">
-        <value>00001</value>
-      </code>
-      <displaced>ChartOfCalculationTypes.ОсновныеНачисления.Больничный</displaced>
-    </items>
-    <items id="2ea5e22b-77d8-4365-a6bf-df37b9f1384f">
-      <name>СевернаяНадбавка</name>
-      <description>Северная надбавка</description>
-      <code xsi:type="core:StringValue">
-        <value>00003</value>
-      </code>
     </items>
   </predefined>
   <attributes uuid="6e180e86-371a-4a1f-a1f6-67b8090a0b9d">
