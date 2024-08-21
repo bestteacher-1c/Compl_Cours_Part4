@@ -33,7 +33,7 @@
   <defaultObjectForm>ChartOfCalculationTypes.ДополнительныеНачисления.Form.ФормаВидаРасчета</defaultObjectForm>
   <defaultListForm>ChartOfCalculationTypes.ДополнительныеНачисления.Form.ФормаСписка</defaultListForm>
   <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
-  <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.Начисления</baseCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</baseCalculationTypes>
   <predefined/>
   <attributes uuid="2db6ec0d-b063-4a60-9216-ef1b268bc74f">

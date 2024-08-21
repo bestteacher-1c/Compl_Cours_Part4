@@ -29,16 +29,22 @@
 			<field>ВидРасчета</field>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>Размер</dataPath>
-			<field>Размер</field>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>Удерждано</dataPath>
 			<field>Удерждано</field>
 			<title xsi:type="v8:LocalStringType">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Удерждано</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПериодДействия</dataPath>
+			<field>ПериодДействия</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Период действия</v8:content>
 				</v8:item>
 			</title>
 		</field>
@@ -67,8 +73,14 @@
 				<field>ВидРасчета</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>Размер</dataPath>
-				<field>Размер</field>
+				<dataPath>ПериодДействия</dataPath>
+				<field>ПериодДействия</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Период действия</v8:content>
+					</v8:item>
+				</title>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ
@@ -76,7 +88,7 @@
 	ОсновныеНачисления.ФизическоеЛицо,
 	ОсновныеНачисления.Результат КАК Начислено,
 	ОсновныеНачисления.ОтработаноДней,
-	ОсновныеНачисления.Размер
+	ОсновныеНачисления.ПериодДействияНачало КАК ПериодДействия
 ИЗ
 	РегистрРасчета.ОсновныеНачисления КАК ОсновныеНачисления
 ГДЕ
@@ -99,19 +111,33 @@
 				<field>ФизическоеЛицо</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>Размер</dataPath>
-				<field>Размер</field>
-			</field>
-			<field xsi:type="DataSetFieldField">
 				<dataPath>ВидРасчета</dataPath>
 				<field>ВидРасчета</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПериодДействия</dataPath>
+				<field>ПериодДействия</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Период действия</v8:content>
+					</v8:item>
+				</title>
+				<role>
+					<dcscom:periodNumber>1</dcscom:periodNumber>
+					<dcscom:periodType>Main</dcscom:periodType>
+				</role>
 			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ
 	ДополнительныеНачисления.ВидРасчета,
 	ДополнительныеНачисления.ФизическоеЛицо,
 	ДополнительныеНачисления.Результат КАК Начислено,
-	ДополнительныеНачисления.Размер
+	ВЫБОР
+		КОГДА ДополнительныеНачисления.ВидРасчета.ТребуетСбораБазы
+			ТОГДА ДополнительныеНачисления.БазовыйПериодНачало
+		ИНАЧЕ ДополнительныеНачисления.ПериодРегистрации
+	КОНЕЦ КАК ПериодДействия
 ИЗ
 	РегистрРасчета.ДополнительныеНачисления КАК ДополнительныеНачисления
 ГДЕ
@@ -128,10 +154,6 @@
 				<field>ВидРасчета</field>
 			</field>
 			<field xsi:type="DataSetFieldField">
-				<dataPath>Размер</dataPath>
-				<field>Размер</field>
-			</field>
-			<field xsi:type="DataSetFieldField">
 				<dataPath>Удерждано</dataPath>
 				<field>Удерждано</field>
 				<title xsi:type="v8:LocalStringType">
@@ -141,18 +163,295 @@
 					</v8:item>
 				</title>
 			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ПериодДействия</dataPath>
+				<field>ПериодДействия</field>
+				<title xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Период действия</v8:content>
+					</v8:item>
+				</title>
+			</field>
 			<dataSource>ИсточникДанных1</dataSource>
 			<query>ВЫБРАТЬ
 	Удержания.ВидРасчета,
 	Удержания.ФизическоеЛицо,
 	Удержания.Результат КАК Удерждано,
-	Удержания.Размер
+	ВЫБОР
+		КОГДА Удержания.ВидРасчета.ТребуетСбораБазы
+			ТОГДА Удержания.БазовыйПериодНачало
+		ИНАЧЕ Удержания.ПериодРегистрации
+	КОНЕЦ КАК ПериодДействия
 ИЗ
 	РегистрРасчета.Удержания КАК Удержания
 ГДЕ
 	Удержания.ПериодРегистрации = &amp;ПериодРегистрации</query>
 		</item>
 	</dataSet>
+	<dataSet xsi:type="DataSetUnion">
+		<name>Показатели</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ФизическоеЛицо</dataPath>
+			<field>ФизическоеЛицо</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидРасчета</dataPath>
+			<field>ВидРасчета</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Показатель</dataPath>
+			<field>Показатель</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Значение</dataPath>
+			<field>Значение</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Период</dataPath>
+			<field>Период</field>
+		</field>
+		<item xsi:type="DataSetUnion">
+			<name>ПоказателиНачислений</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ФизическоеЛицо</dataPath>
+				<field>ФизическоеЛицо</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидРасчета</dataPath>
+				<field>ВидРасчета</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Показатель</dataPath>
+				<field>Показатель</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Значение</dataPath>
+				<field>Значение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Период</dataPath>
+				<field>Период</field>
+			</field>
+			<item xsi:type="DataSetQuery">
+				<name>ПоказателиНачисленийСрез</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ФизическоеЛицо</dataPath>
+					<field>ФизическоеЛицо</field>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ВидРасчета</dataPath>
+					<field>ВидРасчета</field>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Показатель</dataPath>
+					<field>Показатель</field>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Значение</dataPath>
+					<field>Значение</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Период</dataPath>
+					<field>Период</field>
+				</field>
+				<dataSource>ИсточникДанных1</dataSource>
+				<query>ВЫБРАТЬ
+	ЗначенияПоказателейРасчетаНачисленийСрезПоследних.ФизическоеЛицо,
+	ЗначенияПоказателейРасчетаНачисленийСрезПоследних.ВидРасчета,
+	ЗначенияПоказателейРасчетаНачисленийСрезПоследних.Показатель,
+	ЗначенияПоказателейРасчетаНачисленийСрезПоследних.Значение,
+	&amp;ПериодРегистрации КАК Период
+ИЗ
+	РегистрСведений.ЗначенияПоказателейРасчетаНачислений.СрезПоследних(,) КАК
+		ЗначенияПоказателейРасчетаНачисленийСрезПоследних
+ГДЕ
+	ЗначенияПоказателейРасчетаНачисленийСрезПоследних.Значение &gt; 0</query>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>ПоказателиНачисленийЗаРасчетныйПериод</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ФизическоеЛицо</dataPath>
+					<field>ФизическоеЛицо</field>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ВидРасчета</dataPath>
+					<field>ВидРасчета</field>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Показатель</dataPath>
+					<field>Показатель</field>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Значение</dataPath>
+					<field>Значение</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Период</dataPath>
+					<field>Период</field>
+				</field>
+				<dataSource>ИсточникДанных1</dataSource>
+				<query>ВЫБРАТЬ
+	ЗначенияПоказателейРасчетаНачислений.ФизическоеЛицо,
+	ЗначенияПоказателейРасчетаНачислений.ВидРасчета,
+	ЗначенияПоказателейРасчетаНачислений.Показатель,
+	ЗначенияПоказателейРасчетаНачислений.Значение,
+	ЗначенияПоказателейРасчетаНачислений.Период
+ИЗ
+	РегистрСведений.ЗначенияПоказателейРасчетаНачислений КАК ЗначенияПоказателейРасчетаНачислений
+ГДЕ
+	ЗначенияПоказателейРасчетаНачислений.Период МЕЖДУ &amp;ПериодРегистрации И &amp;КонецПериодРегистрации
+	И ЗначенияПоказателейРасчетаНачислений.Значение &gt; 0</query>
+			</item>
+		</item>
+		<item xsi:type="DataSetUnion">
+			<name>ПоказателиУдержаний</name>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ФизическоеЛицо</dataPath>
+				<field>ФизическоеЛицо</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>ВидРасчета</dataPath>
+				<field>ВидРасчета</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Показатель</dataPath>
+				<field>Показатель</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Значение</dataPath>
+				<field>Значение</field>
+			</field>
+			<field xsi:type="DataSetFieldField">
+				<dataPath>Период</dataPath>
+				<field>Период</field>
+			</field>
+			<item xsi:type="DataSetQuery">
+				<name>ПоказателиУдержанийСрез</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ФизическоеЛицо</dataPath>
+					<field>ФизическоеЛицо</field>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ВидРасчета</dataPath>
+					<field>ВидРасчета</field>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Показатель</dataPath>
+					<field>Показатель</field>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Значение</dataPath>
+					<field>Значение</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Период</dataPath>
+					<field>Период</field>
+				</field>
+				<dataSource>ИсточникДанных1</dataSource>
+				<query>ВЫБРАТЬ
+	ЗначенияПоказателейРасчетаУдержанийСрезПоследних.ФизическоеЛицо,
+	ЗначенияПоказателейРасчетаУдержанийСрезПоследних.ВидРасчета,
+	ЗначенияПоказателейРасчетаУдержанийСрезПоследних.Показатель,
+	ЗначенияПоказателейРасчетаУдержанийСрезПоследних.Значение,
+	&amp;ПериодРегистрации КАК Период
+ИЗ
+	РегистрСведений.ЗначенияПоказателейРасчетаУдержаний.СрезПоследних(,) КАК
+		ЗначенияПоказателейРасчетаУдержанийСрезПоследних
+ГДЕ
+	ЗначенияПоказателейРасчетаУдержанийСрезПоследних.Значение &gt; 0</query>
+			</item>
+			<item xsi:type="DataSetQuery">
+				<name>ПоказателиУдержанийЗаРасчетныйПериод</name>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ФизическоеЛицо</dataPath>
+					<field>ФизическоеЛицо</field>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>ВидРасчета</dataPath>
+					<field>ВидРасчета</field>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Показатель</dataPath>
+					<field>Показатель</field>
+					<role>
+						<dcscom:dimension>true</dcscom:dimension>
+					</role>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Значение</dataPath>
+					<field>Значение</field>
+				</field>
+				<field xsi:type="DataSetFieldField">
+					<dataPath>Период</dataPath>
+					<field>Период</field>
+				</field>
+				<dataSource>ИсточникДанных1</dataSource>
+				<query>ВЫБРАТЬ
+	ЗначенияПоказателейРасчетаУдержаний.ФизическоеЛицо,
+	ЗначенияПоказателейРасчетаУдержаний.ВидРасчета,
+	ЗначенияПоказателейРасчетаУдержаний.Показатель,
+	ЗначенияПоказателейРасчетаУдержаний.Значение,
+	ЗначенияПоказателейРасчетаУдержаний.Период
+ИЗ
+	РегистрСведений.ЗначенияПоказателейРасчетаУдержаний КАК ЗначенияПоказателейРасчетаУдержаний
+ГДЕ
+	ЗначенияПоказателейРасчетаУдержаний.Период МЕЖДУ &amp;ПериодРегистрации И &amp;КонецПериодРегистрации
+	И ЗначенияПоказателейРасчетаУдержаний.Значение &gt; 0</query>
+			</item>
+		</item>
+	</dataSet>
+	<dataSetLink>
+		<sourceDataSet>Начисления и удержания</sourceDataSet>
+		<destinationDataSet>Показатели</destinationDataSet>
+		<sourceExpression>ФизическоеЛицо</sourceExpression>
+		<destinationExpression>ФизическоеЛицо</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Начисления и удержания</sourceDataSet>
+		<destinationDataSet>Показатели</destinationDataSet>
+		<sourceExpression>ВидРасчета</sourceExpression>
+		<destinationExpression>ВидРасчета</destinationExpression>
+	</dataSetLink>
+	<dataSetLink>
+		<sourceDataSet>Начисления и удержания</sourceDataSet>
+		<destinationDataSet>Показатели</destinationDataSet>
+		<sourceExpression>ПериодДействия</sourceExpression>
+		<destinationExpression>Период</destinationExpression>
+	</dataSetLink>
 	<calculatedField>
 		<dataPath>КВыплате</dataPath>
 		<expression>0</expression>
@@ -199,6 +498,42 @@
 		<value xsi:nil="true"/>
 		<useRestriction>false</useRestriction>
 	</parameter>
+	<parameter>
+		<name>Период</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Период</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>DateTime</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<useRestriction>true</useRestriction>
+		<expression>&amp;ПериодРегистрации</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>КонецПериодРегистрации</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Конец период регистрации</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:dateTime</v8:Type>
+			<v8:DateQualifiers>
+				<v8:DateFractions>Date</v8:DateFractions>
+			</v8:DateQualifiers>
+		</valueType>
+		<useRestriction>true</useRestriction>
+		<expression>КонецПериода(&amp;ПериодРегистрации, "Месяц")</expression>
+		<availableAsField>false</availableAsField>
+	</parameter>
 	<settingsVariant>
 		<dcsset:name>Основной</dcsset:name>
 		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
@@ -208,7 +543,10 @@
 					<dcsset:field>ВидРасчета</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Размер</dcsset:field>
+					<dcsset:field>Показатель</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Значение</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>ОтработаноДней</dcsset:field>

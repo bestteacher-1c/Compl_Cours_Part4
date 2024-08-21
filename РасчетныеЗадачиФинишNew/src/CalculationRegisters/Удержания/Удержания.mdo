@@ -32,19 +32,6 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
-  <attributes uuid="953d65d3-30e0-4d60-b59c-408d65d94e2a">
-    <name>Размер</name>
-    <synonym>
-      <key>ru</key>
-      <value>Размер</value>
-    </synonym>
-    <type>
-      <types>DefinedType.ПоложительноеЧисло</types>
-    </type>
-    <minValue xsi:type="core:UndefinedValue"/>
-    <maxValue xsi:type="core:UndefinedValue"/>
-    <fullTextSearch>Use</fullTextSearch>
-  </attributes>
   <dimensions uuid="5891769a-563f-4077-abe8-5ee9a4febf8b">
     <name>ФизическоеЛицо</name>
     <synonym>
@@ -105,7 +92,7 @@
         <value>Физическое лицо</value>
       </synonym>
       <registerDimension>CalculationRegister.Удержания.Dimension.ФизическоеЛицо</registerDimension>
-      <leadingRegisterData>CalculationRegister.ОсновныеНачисления.Dimension.ФизическоеЛицо</leadingRegisterData>
+      <leadingRegisterData>CalculationRegister.Начисления.Dimension.ФизическоеЛицо</leadingRegisterData>
       <leadingRegisterData>CalculationRegister.ДополнительныеНачисления.Dimension.ФизическоеЛицо</leadingRegisterData>
     </dimensions>
   </recalculations>

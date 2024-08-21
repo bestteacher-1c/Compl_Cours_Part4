@@ -88,10 +88,10 @@
   <informationRegisters>InformationRegister.ЗначенияПоказателейРасчетаУдержаний</informationRegisters>
   <informationRegisters>InformationRegister.ДатаЗапретаИзменений</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ВзаиморасчетыСРаботниками</accumulationRegisters>
-  <chartsOfCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</chartsOfCalculationTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.Начисления</chartsOfCalculationTypes>
   <chartsOfCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</chartsOfCalculationTypes>
   <chartsOfCalculationTypes>ChartOfCalculationTypes.Удержания</chartsOfCalculationTypes>
-  <calculationRegisters>CalculationRegister.ОсновныеНачисления</calculationRegisters>
+  <calculationRegisters>CalculationRegister.Начисления</calculationRegisters>
   <calculationRegisters>CalculationRegister.ДополнительныеНачисления</calculationRegisters>
   <calculationRegisters>CalculationRegister.Удержания</calculationRegisters>
 </mdclass:Configuration>

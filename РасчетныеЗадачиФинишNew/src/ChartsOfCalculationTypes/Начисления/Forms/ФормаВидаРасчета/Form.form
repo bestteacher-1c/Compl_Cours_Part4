@@ -1837,7 +1837,7 @@
     <name>Объект</name>
     <id>1</id>
     <valueType>
-      <types>ChartOfCalculationTypesObject.ОсновныеНачисления</types>
+      <types>ChartOfCalculationTypesObject.Начисления</types>
     </valueType>
     <view>
       <common>true</common>
