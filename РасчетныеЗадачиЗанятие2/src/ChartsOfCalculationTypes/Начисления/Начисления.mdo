@@ -13,14 +13,14 @@
     <leadingCalculationTypesType typeId="f2efe063-d8c1-42b6-a16c-201caeb53963" valueTypeId="7940af42-7133-4d4b-9771-4be050f1c57a"/>
     <leadingCalculationTypesRowType typeId="e5f08836-4c30-4170-b271-4448089194fd" valueTypeId="d79fe72d-9ed6-4ee2-8bf4-3110957977d3"/>
   </producedTypes>
-  <name>ОсновныеНачисления</name>
+  <name>Начисления</name>
   <synonym>
     <key>ru</key>
-    <value>Основные начисления</value>
+    <value>Начисления</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>ChartOfCalculationTypes.ОсновныеНачисления.StandardAttribute.Description</inputByString>
-  <inputByString>ChartOfCalculationTypes.ОсновныеНачисления.StandardAttribute.Code</inputByString>
+  <inputByString>ChartOfCalculationTypes.Начисления.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCalculationTypes.Начисления.StandardAttribute.Code</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
@@ -91,28 +91,12 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <defaultObjectForm>ChartOfCalculationTypes.ОсновныеНачисления.Form.ФормаВидаРасчета</defaultObjectForm>
-  <defaultListForm>ChartOfCalculationTypes.ОсновныеНачисления.Form.ФормаСписка</defaultListForm>
+  <defaultObjectForm>ChartOfCalculationTypes.Начисления.Form.ФормаВидаРасчета</defaultObjectForm>
+  <defaultListForm>ChartOfCalculationTypes.Начисления.Form.ФормаСписка</defaultListForm>
   <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
-  <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.Начисления</baseCalculationTypes>
   <actionPeriodUse>true</actionPeriodUse>
-  <predefined>
-    <items id="5257cc16-dfe8-4bd5-bce6-dd1cdbb34f61">
-      <name>ОкладНаВыезде</name>
-      <description>Оклад на выезде</description>
-      <code xsi:type="core:StringValue">
-        <value>00020</value>
-      </code>
-    </items>
-    <items id="12f094e9-4a25-44cb-9969-a55a83e57c92">
-      <name>ОкладПоДням</name>
-      <description>Оклад по дням</description>
-      <code xsi:type="core:StringValue">
-        <value>00001</value>
-      </code>
-      <displaced>ChartOfCalculationTypes.ОсновныеНачисления.ОкладНаВыезде</displaced>
-    </items>
-  </predefined>
+  <predefined/>
   <attributes uuid="6e180e86-371a-4a1f-a1f6-67b8090a0b9d">
     <name>СпособРасчета</name>
     <synonym>
@@ -193,7 +177,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="12c627f0-11c4-4db0-86a2-d50862ae7a9d">
+  <attributes uuid="fb67958f-f8e3-4590-9686-2fac47cb2ae7">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="c8832fa2-739d-47b2-9dff-1e724623a60a">
     <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
@@ -202,7 +200,7 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="cd49317c-3fdc-4d33-8831-afe27bcddf4a">
+  <forms uuid="54979337-a2ba-41ff-aefe-bb6bb80d58bb">
     <name>ФормаВидаРасчета</name>
     <synonym>
       <key>ru</key>

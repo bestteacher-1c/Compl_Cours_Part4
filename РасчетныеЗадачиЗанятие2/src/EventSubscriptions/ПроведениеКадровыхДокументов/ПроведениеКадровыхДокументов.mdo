@@ -11,5 +11,5 @@
     <types>DocumentObject.ПриказОПриеме</types>
   </source>
   <event>Posting</event>
-  <handler>CommonModule.Сервер.ПроведениеКадровыхДокументовОбработкаПроведения</handler>
+  <handler>CommonModule.ОбщийМодульСервер.ПроведениеКадровыхДокументовОбработкаПроведения</handler>
 </mdclass:EventSubscription>

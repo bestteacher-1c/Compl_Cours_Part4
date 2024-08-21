@@ -46,7 +46,7 @@
   <commonPictures>CommonPicture.Документы</commonPictures>
   <commonPictures>CommonPicture.Сервис</commonPictures>
   <commonPictures>CommonPicture.ФоновыйПроцесс</commonPictures>
-  <commonModules>CommonModule.Сервер</commonModules>
+  <commonModules>CommonModule.ОбщийМодульСервер</commonModules>
   <eventSubscriptions>EventSubscription.ПроведениеКадровыхДокументов</eventSubscriptions>
   <definedTypes>DefinedType.ПоложительноеЧисло</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСумма</definedTypes>
@@ -68,10 +68,10 @@
   <dataProcessors>DataProcessor.КонсольЗапросов</dataProcessors>
   <informationRegisters>InformationRegister.Сотрудники</informationRegisters>
   <informationRegisters>InformationRegister.ГрафикиРаботы</informationRegisters>
-  <chartsOfCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</chartsOfCalculationTypes>
-  <chartsOfCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</chartsOfCalculationTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.Начисления</chartsOfCalculationTypes>
   <chartsOfCalculationTypes>ChartOfCalculationTypes.Удержания</chartsOfCalculationTypes>
-  <calculationRegisters>CalculationRegister.ОсновныеНачисления</calculationRegisters>
-  <calculationRegisters>CalculationRegister.ДополнительныеНачисления</calculationRegisters>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</chartsOfCalculationTypes>
+  <calculationRegisters>CalculationRegister.Начисления</calculationRegisters>
   <calculationRegisters>CalculationRegister.Удержания</calculationRegisters>
+  <calculationRegisters>CalculationRegister.ДополнительныеНачисления</calculationRegisters>
 </mdclass:Configuration>
