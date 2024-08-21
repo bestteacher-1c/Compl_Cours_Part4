@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Settings xmlns="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core">
+	<filter>
+		<viewMode>Normal</viewMode>
+		<userSettingID>55b8a983-3073-483c-accf-fdb47c24fa69</userSettingID>
+	</filter>
+	<order>
+		<viewMode>Normal</viewMode>
+		<userSettingID>3ea708d1-7495-4e08-8f42-5e83823c7021</userSettingID>
+	</order>
+	<conditionalAppearance>
+		<item>
+			<selection/>
+			<filter>
+				<item xsi:type="FilterItemComparison">
+					<left xsi:type="dcscor:Field">Предопределенный</left>
+					<comparisonType>Equal</comparisonType>
+					<right xsi:type="xs:boolean">true</right>
+				</item>
+			</filter>
+			<appearance>
+				<dcscor:item xsi:type="SettingsParameterValue">
+					<dcscor:parameter>ЦветТекста</dcscor:parameter>
+					<dcscor:value xsi:type="v8ui:Color">style:FieldSelectionBackColor</dcscor:value>
+				</dcscor:item>
+			</appearance>
+		</item>
+		<viewMode>Normal</viewMode>
+		<userSettingID>f9e21f83-8630-4633-9a81-0d211ed9238e</userSettingID>
+	</conditionalAppearance>
+	<itemsViewMode>Normal</itemsViewMode>
+	<itemsUserSettingID>8d1162b5-a704-41b5-b421-eb9a440eb9e0</itemsUserSettingID>
+</Settings>

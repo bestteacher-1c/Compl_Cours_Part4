@@ -13,14 +13,14 @@
     <leadingCalculationTypesType typeId="f2efe063-d8c1-42b6-a16c-201caeb53963" valueTypeId="7940af42-7133-4d4b-9771-4be050f1c57a"/>
     <leadingCalculationTypesRowType typeId="e5f08836-4c30-4170-b271-4448089194fd" valueTypeId="d79fe72d-9ed6-4ee2-8bf4-3110957977d3"/>
   </producedTypes>
-  <name>ОсновныеНачисления</name>
+  <name>Начисления</name>
   <synonym>
     <key>ru</key>
-    <value>Основные начисления</value>
+    <value>Начисления</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <inputByString>ChartOfCalculationTypes.ОсновныеНачисления.StandardAttribute.Description</inputByString>
-  <inputByString>ChartOfCalculationTypes.ОсновныеНачисления.StandardAttribute.Code</inputByString>
+  <inputByString>ChartOfCalculationTypes.Начисления.StandardAttribute.Description</inputByString>
+  <inputByString>ChartOfCalculationTypes.Начисления.StandardAttribute.Code</inputByString>
   <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
@@ -91,10 +91,10 @@
   <defaultPresentation>AsDescription</defaultPresentation>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <defaultObjectForm>ChartOfCalculationTypes.ОсновныеНачисления.Form.ФормаВидаРасчета</defaultObjectForm>
-  <defaultListForm>ChartOfCalculationTypes.ОсновныеНачисления.Form.ФормаСписка</defaultListForm>
+  <defaultObjectForm>ChartOfCalculationTypes.Начисления.Form.ФормаВидаРасчета</defaultObjectForm>
+  <defaultListForm>ChartOfCalculationTypes.Начисления.Form.ФормаСписка</defaultListForm>
   <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
-  <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.Начисления</baseCalculationTypes>
   <actionPeriodUse>true</actionPeriodUse>
   <predefined>
     <items id="41c39330-9845-45a8-8bd8-3391cba8d276">
@@ -103,29 +103,7 @@
       <code xsi:type="core:StringValue">
         <value>00013</value>
       </code>
-      <base>ChartOfCalculationTypes.ОсновныеНачисления.ОкладПоДням</base>
-    </items>
-    <items id="ea231872-8b9f-45f9-bffc-1d0e08d20f99">
-      <name>ДоплатаЗаВредность</name>
-      <description>Доплата за вредность</description>
-      <code xsi:type="core:StringValue">
-        <value>00002</value>
-      </code>
-    </items>
-    <items id="12f094e9-4a25-44cb-9969-a55a83e57c92">
-      <name>ОкладПоДням</name>
-      <description>Оклад по дням</description>
-      <code xsi:type="core:StringValue">
-        <value>00001</value>
-      </code>
-      <displaced>ChartOfCalculationTypes.ОсновныеНачисления.Больничный</displaced>
-    </items>
-    <items id="2ea5e22b-77d8-4365-a6bf-df37b9f1384f">
-      <name>СевернаяНадбавка</name>
-      <description>Северная надбавка</description>
-      <code xsi:type="core:StringValue">
-        <value>00003</value>
-      </code>
+      <base>ChartOfCalculationTypes.Начисления.ОкладПоДням</base>
     </items>
   </predefined>
   <attributes uuid="6e180e86-371a-4a1f-a1f6-67b8090a0b9d">

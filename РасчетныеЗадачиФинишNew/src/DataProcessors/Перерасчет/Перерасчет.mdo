@@ -43,7 +43,7 @@
         <value>Вид расчета</value>
       </synonym>
       <type>
-        <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
         <types>ChartOfCalculationTypesRef.ДополнительныеНачисления</types>
         <types>ChartOfCalculationTypesRef.Удержания</types>
       </type>

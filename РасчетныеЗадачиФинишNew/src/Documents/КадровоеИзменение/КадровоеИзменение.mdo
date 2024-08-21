@@ -69,11 +69,8 @@
   <defaultObjectForm>Document.КадровоеИзменение.Form.ФормаДокумента</defaultObjectForm>
   <realTimePosting>Deny</realTimePosting>
   <registerRecords>InformationRegister.ПлановыеНачисления</registerRecords>
-  <registerRecords>InformationRegister.ПлановыеОсновныеНачисления</registerRecords>
   <registerRecords>InformationRegister.Сотрудники</registerRecords>
-  <registerRecords>InformationRegister.ПлановыеУдержания__</registerRecords>
   <registerRecords>InformationRegister.ЗначенияПоказателейРасчетаНачислений</registerRecords>
-  <registerRecords>InformationRegister.ПлановыеДополнительныеНачисления</registerRecords>
   <registerRecords>InformationRegister.ПлановыеУдержания</registerRecords>
   <registerRecords>InformationRegister.ЗначенияПоказателейРасчетаУдержаний</registerRecords>
   <attributes uuid="d0735c27-782d-4cea-9ded-f1e28090f640">
@@ -196,7 +193,7 @@
         <value>Вид расчета</value>
       </synonym>
       <type>
-        <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -239,142 +236,6 @@
       </synonym>
       <type>
         <types>Boolean</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
-  <tabularSections uuid="2e20d744-2fba-4a9d-b687-c50ba5873b86">
-    <producedTypes>
-      <objectType typeId="4bd0ab2d-1030-42ab-bc43-6ab3e2204ae2" valueTypeId="728f9ff3-13f7-43e0-9d4b-7c4e9e8fb105"/>
-      <rowType typeId="9188980e-d56b-49ce-bc0c-4a1bf5b26a1f" valueTypeId="c72b1ef2-63eb-42f1-9f2f-bf367778cef8"/>
-    </producedTypes>
-    <name>ОсновныеНачисления</name>
-    <synonym>
-      <key>ru</key>
-      <value>Основные начисления</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="9e01692c-3d48-4bcf-b324-24090be9b10c">
-      <name>ВидРасчета</name>
-      <synonym>
-        <key>ru</key>
-        <value>Вид расчета</value>
-      </synonym>
-      <type>
-        <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="f320e73b-7d40-4eba-a9ca-0e91166f33d1">
-      <name>Размер</name>
-      <synonym>
-        <key>ru</key>
-        <value>Размер</value>
-      </synonym>
-      <type>
-        <types>DefinedType.ПоложительноеЧисло</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="891ec492-7c1a-49b7-aee6-4a661ace1235">
-      <name>ПродолжаетДействовать</name>
-      <synonym>
-        <key>ru</key>
-        <value>Продолжает действовать</value>
-      </synonym>
-      <type>
-        <types>Boolean</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="d7c3462b-c532-4694-9593-2409febbcb33">
-      <name>Показатель</name>
-      <synonym>
-        <key>ru</key>
-        <value>Показатель</value>
-      </synonym>
-      <type>
-        <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="98d9b5b5-527c-4006-aed0-452584207b88">
-      <name>Значение</name>
-      <synonym>
-        <key>ru</key>
-        <value>Значение</value>
-      </synonym>
-      <type>
-        <types>DefinedType.ПоложительноеЧисло</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
-  <tabularSections uuid="42df62da-37f9-4acc-ad8d-4d6206067c02">
-    <producedTypes>
-      <objectType typeId="42c9d96f-3a60-4880-a570-0b51e5ed3d31" valueTypeId="d462830f-0eb9-4df4-b0d5-13b69e1d77a8"/>
-      <rowType typeId="58f34416-2a03-4bc0-b25a-a20885d1fd1a" valueTypeId="0dcbc867-f36e-4724-99c6-f1f460ec26d9"/>
-    </producedTypes>
-    <name>ДополнительныеНачисления</name>
-    <synonym>
-      <key>ru</key>
-      <value>Дополнительные начисления</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="ae82d848-bf7a-4444-b7e5-edcf3e882b9a">
-      <name>ВидРасчета</name>
-      <synonym>
-        <key>ru</key>
-        <value>Вид расчета</value>
-      </synonym>
-      <type>
-        <types>ChartOfCalculationTypesRef.ДополнительныеНачисления</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="3c5c1e35-e174-4d2b-8fee-ad4c601f8c69">
-      <name>Размер</name>
-      <synonym>
-        <key>ru</key>
-        <value>Размер</value>
-      </synonym>
-      <type>
-        <types>DefinedType.ПоложительноеЧисло</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

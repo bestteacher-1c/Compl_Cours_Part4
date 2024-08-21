@@ -28,6 +28,36 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="b6d9316c-25bf-4ae3-b2ef-98601de30de4">
+      <name>ФактДней</name>
+      <description>Факт дней</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="d5007aa1-51f9-41d6-ac4a-79424d3fbe96">
+      <name>НормаДней</name>
+      <description>Норма дней</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="95f0091f-8b78-4b4a-9483-c72a8755e5c5">
+      <name>РезультатБаза</name>
+      <description>Результат база</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="222dfb09-ca71-4b21-a9b7-423a7f5efa9c">
+      <name>ОтработаноДнейБаза</name>
+      <description>Отработано дней база</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+  </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <attributes uuid="998e0d54-a3a5-465c-9552-68c81dad7600">

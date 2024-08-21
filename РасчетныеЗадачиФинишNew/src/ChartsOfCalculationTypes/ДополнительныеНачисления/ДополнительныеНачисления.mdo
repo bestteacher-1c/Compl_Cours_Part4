@@ -33,36 +33,9 @@
   <defaultObjectForm>ChartOfCalculationTypes.ДополнительныеНачисления.Form.ФормаВидаРасчета</defaultObjectForm>
   <defaultListForm>ChartOfCalculationTypes.ДополнительныеНачисления.Form.ФормаСписка</defaultListForm>
   <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
-  <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.Начисления</baseCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</baseCalculationTypes>
-  <predefined>
-    <items id="34cca6c1-6e92-4842-9569-a3748cc28811">
-      <name>ПремияПроцентом</name>
-      <description>Премия процентом</description>
-      <code xsi:type="core:StringValue">
-        <value>00002</value>
-      </code>
-      <base>ChartOfCalculationTypes.ОсновныеНачисления.ОкладПоДням</base>
-      <base>ChartOfCalculationTypes.ДополнительныеНачисления.ПремияСуммой</base>
-    </items>
-    <items id="85018777-8844-409f-8020-10853feee101">
-      <name>ПремияРуководителю</name>
-      <description>Премия руководителю</description>
-      <code xsi:type="core:StringValue">
-        <value>00003</value>
-      </code>
-      <base>ChartOfCalculationTypes.ОсновныеНачисления.ОкладПоДням</base>
-      <base>ChartOfCalculationTypes.ДополнительныеНачисления.ПремияПроцентом</base>
-      <base>ChartOfCalculationTypes.ДополнительныеНачисления.ПремияСуммой</base>
-    </items>
-    <items id="2f409ae1-979c-4dda-931c-cdb05e98e4cd">
-      <name>ПремияСуммой</name>
-      <description>Премия суммой</description>
-      <code xsi:type="core:StringValue">
-        <value>00001</value>
-      </code>
-    </items>
-  </predefined>
+  <predefined/>
   <attributes uuid="2db6ec0d-b063-4a60-9216-ef1b268bc74f">
     <name>СпособРасчета</name>
     <synonym>

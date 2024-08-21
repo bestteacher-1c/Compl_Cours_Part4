@@ -33,26 +33,9 @@
   <defaultObjectForm>ChartOfCalculationTypes.Удержания.Form.ФормаВидаРасчета</defaultObjectForm>
   <defaultListForm>ChartOfCalculationTypes.Удержания.Form.ФормаСписка</defaultListForm>
   <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
-  <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.Начисления</baseCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</baseCalculationTypes>
-  <predefined>
-    <items id="639dde45-6d38-4a1d-b9e2-52470ceb31a5">
-      <name>УдержаниеПроцентом</name>
-      <description>Удержание процентом</description>
-      <code xsi:type="core:StringValue">
-        <value>00002</value>
-      </code>
-      <base>ChartOfCalculationTypes.ОсновныеНачисления.ОкладПоДням</base>
-      <base>ChartOfCalculationTypes.ДополнительныеНачисления.ПремияПроцентом</base>
-    </items>
-    <items id="6755c53e-fcc5-4bcd-ac1f-7b4f692fd1ad">
-      <name>УдержаниеСуммой</name>
-      <description>Удержание суммой</description>
-      <code xsi:type="core:StringValue">
-        <value>00001</value>
-      </code>
-    </items>
-  </predefined>
+  <predefined/>
   <attributes uuid="47aa4bbe-9832-49bb-91de-79c262dd9668">
     <name>СпособРасчета</name>
     <synonym>

@@ -55,7 +55,6 @@
   <definedTypes>DefinedType.ДенежнаяСумма</definedTypes>
   <definedTypes>DefinedType.ПоложительноеЧисло</definedTypes>
   <definedTypes>DefinedType.КоличествоВремени</definedTypes>
-  <constants>Constant.ТекущийПериод</constants>
   <constants>Constant.Активация</constants>
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.Подразделения</catalogs>
@@ -82,19 +81,17 @@
   <dataProcessors>DataProcessor.КонсольЗапросов</dataProcessors>
   <informationRegisters>InformationRegister.Сотрудники</informationRegisters>
   <informationRegisters>InformationRegister.ГрафикиРаботы</informationRegisters>
-  <informationRegisters>InformationRegister.ПлановыеОсновныеНачисления</informationRegisters>
-  <informationRegisters>InformationRegister.ПлановыеДополнительныеНачисления</informationRegisters>
-  <informationRegisters>InformationRegister.ПлановыеУдержания__</informationRegisters>
   <informationRegisters>InformationRegister.РуководителиПодразделений</informationRegisters>
   <informationRegisters>InformationRegister.ПлановыеНачисления</informationRegisters>
   <informationRegisters>InformationRegister.ЗначенияПоказателейРасчетаНачислений</informationRegisters>
   <informationRegisters>InformationRegister.ПлановыеУдержания</informationRegisters>
   <informationRegisters>InformationRegister.ЗначенияПоказателейРасчетаУдержаний</informationRegisters>
+  <informationRegisters>InformationRegister.ДатаЗапретаИзменений</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ВзаиморасчетыСРаботниками</accumulationRegisters>
-  <chartsOfCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</chartsOfCalculationTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.Начисления</chartsOfCalculationTypes>
   <chartsOfCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</chartsOfCalculationTypes>
   <chartsOfCalculationTypes>ChartOfCalculationTypes.Удержания</chartsOfCalculationTypes>
-  <calculationRegisters>CalculationRegister.ОсновныеНачисления</calculationRegisters>
+  <calculationRegisters>CalculationRegister.Начисления</calculationRegisters>
   <calculationRegisters>CalculationRegister.ДополнительныеНачисления</calculationRegisters>
   <calculationRegisters>CalculationRegister.Удержания</calculationRegisters>
 </mdclass:Configuration>
