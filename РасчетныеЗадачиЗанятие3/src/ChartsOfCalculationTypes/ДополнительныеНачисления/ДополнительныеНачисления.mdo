@@ -33,24 +33,9 @@
   <defaultObjectForm>ChartOfCalculationTypes.ДополнительныеНачисления.Form.ФормаВидаРасчета</defaultObjectForm>
   <defaultListForm>ChartOfCalculationTypes.ДополнительныеНачисления.Form.ФормаСписка</defaultListForm>
   <dependenceOnCalculationTypes>OnActionPeriod</dependenceOnCalculationTypes>
-  <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.Начисления</baseCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</baseCalculationTypes>
-  <predefined>
-    <items id="35420fab-0a3c-4cf5-ae25-444176e102e1">
-      <name>ПремияПроцентом</name>
-      <description>Премия процентом</description>
-      <code xsi:type="core:StringValue">
-        <value>00002</value>
-      </code>
-    </items>
-    <items id="8919d4e0-d247-43a4-bca1-a9a04866897a">
-      <name>ПремияСуммой</name>
-      <description>Премия суммой</description>
-      <code xsi:type="core:StringValue">
-        <value>00001</value>
-      </code>
-    </items>
-  </predefined>
+  <predefined/>
   <attributes uuid="2db6ec0d-b063-4a60-9216-ef1b268bc74f">
     <name>СпособРасчета</name>
     <synonym>

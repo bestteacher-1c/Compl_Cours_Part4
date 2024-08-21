@@ -68,10 +68,9 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.КадровоеИзменение.Form.ФормаДокумента</defaultObjectForm>
   <realTimePosting>Deny</realTimePosting>
-  <registerRecords>InformationRegister.ПлановыеОсновныеНачисления</registerRecords>
+  <registerRecords>InformationRegister.ПлановыеНачисления</registerRecords>
   <registerRecords>InformationRegister.Сотрудники</registerRecords>
   <registerRecords>InformationRegister.ПлановыеУдержания</registerRecords>
-  <registerRecords>InformationRegister.ПлановыеДополнительныеНачисления</registerRecords>
   <attributes uuid="208fdbc2-7be0-4ff8-91ef-04c7df3e30f9">
     <name>ДокументОснование</name>
     <synonym>
@@ -180,10 +179,10 @@
       <objectType typeId="6d110b88-e674-4a6b-b25b-9a033b716323" valueTypeId="a85bb31b-2f08-42c8-9f07-11cc7a942a44"/>
       <rowType typeId="b500ea5a-6454-4da0-8b32-1edd28d46d47" valueTypeId="686052a6-b0a2-4787-88ba-8db499af71ab"/>
     </producedTypes>
-    <name>ОсновныеНачисления</name>
+    <name>Начисления</name>
     <synonym>
       <key>ru</key>
-      <value>Основные начисления</value>
+      <value>Начисления</value>
     </synonym>
     <standardAttributes>
       <dataHistory>Use</dataHistory>
@@ -200,7 +199,21 @@
         <value>Вид расчета</value>
       </synonym>
       <type>
-        <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="60b5ff24-ca1a-4455-ab63-2c3b80ef3930">
+      <name>Показатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Показатель</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -208,6 +221,67 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="06c0f376-88e3-4165-909e-76afc1801683">
+      <name>Размер</name>
+      <synonym>
+        <key>ru</key>
+        <value>Размер</value>
+      </synonym>
+      <type>
+        <types>DefinedType.ПоложительноеЧисло</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+  </tabularSections>
+  <tabularSections uuid="8db2e143-44b7-4b2f-953f-8d252818fd90">
+    <producedTypes>
+      <objectType typeId="5db62165-66f9-4bb8-b409-7c39d9c888fe" valueTypeId="0db56ffb-d900-4268-9dc3-b27fdff0b1ae"/>
+      <rowType typeId="99b07483-da97-4d47-85a6-d62440a998be" valueTypeId="f8323a0c-da25-4ebe-b28c-08503f49d102"/>
+    </producedTypes>
+    <name>Удержания</name>
+    <synonym>
+      <key>ru</key>
+      <value>Удержания</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="6b536238-6148-4270-ae88-c189abd483b1">
+      <name>ВидРасчета</name>
+      <synonym>
+        <key>ru</key>
+        <value>Вид расчета</value>
+      </synonym>
+      <type>
+        <types>ChartOfCalculationTypesRef.Удержания</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="307ef603-94d4-4ab2-9da3-87b651d3f291">
+      <name>Показатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Показатель</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="e784ec08-90e8-4211-80f3-4a939190426d">
       <name>Размер</name>
       <synonym>
         <key>ru</key>
@@ -255,53 +329,6 @@
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="5e83f8a8-87e8-4592-9563-103f1281f9c5">
-      <name>Размер</name>
-      <synonym>
-        <key>ru</key>
-        <value>Размер</value>
-      </synonym>
-      <type>
-        <types>DefinedType.ПоложительноеЧисло</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-  </tabularSections>
-  <tabularSections uuid="8db2e143-44b7-4b2f-953f-8d252818fd90">
-    <producedTypes>
-      <objectType typeId="5db62165-66f9-4bb8-b409-7c39d9c888fe" valueTypeId="0db56ffb-d900-4268-9dc3-b27fdff0b1ae"/>
-      <rowType typeId="99b07483-da97-4d47-85a6-d62440a998be" valueTypeId="f8323a0c-da25-4ebe-b28c-08503f49d102"/>
-    </producedTypes>
-    <name>Удержания</name>
-    <synonym>
-      <key>ru</key>
-      <value>Удержания</value>
-    </synonym>
-    <standardAttributes>
-      <dataHistory>Use</dataHistory>
-      <name>LineNumber</name>
-      <fillValue xsi:type="core:UndefinedValue"/>
-      <fullTextSearch>Use</fullTextSearch>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-    </standardAttributes>
-    <attributes uuid="6b536238-6148-4270-ae88-c189abd483b1">
-      <name>ВидРасчета</name>
-      <synonym>
-        <key>ru</key>
-        <value>Вид расчета</value>
-      </synonym>
-      <type>
-        <types>ChartOfCalculationTypesRef.Удержания</types>
-      </type>
-      <minValue xsi:type="core:UndefinedValue"/>
-      <maxValue xsi:type="core:UndefinedValue"/>
-      <dataHistory>Use</dataHistory>
-      <fullTextSearch>Use</fullTextSearch>
-    </attributes>
-    <attributes uuid="e784ec08-90e8-4211-80f3-4a939190426d">
       <name>Размер</name>
       <synonym>
         <key>ru</key>
