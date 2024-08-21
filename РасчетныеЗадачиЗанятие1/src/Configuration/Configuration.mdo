@@ -56,6 +56,7 @@
   <catalogs>Catalog.Подразделения</catalogs>
   <catalogs>Catalog.Должности</catalogs>
   <catalogs>Catalog.ВидыГрафиковРабот</catalogs>
+  <catalogs>Catalog.ПоказателиРасчетаЗарплаты</catalogs>
   <documents>Document.ПриказОПриеме</documents>
   <documents>Document.КадровоеИзменение</documents>
   <documents>Document.ПриказОбУвольнении</documents>

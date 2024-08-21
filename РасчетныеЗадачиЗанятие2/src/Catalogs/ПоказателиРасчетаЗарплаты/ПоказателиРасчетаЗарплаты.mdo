@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4b387573-74a4-4a59-95eb-79b0bddf3494">
+  <producedTypes>
+    <objectType typeId="7b165541-8f70-438b-92fb-161ba09adca8" valueTypeId="cea52824-4c96-48ea-aef5-457af945a214"/>
+    <refType typeId="ed4135bc-3a35-41ef-80ee-05570d2d4cf3" valueTypeId="8525efcf-7fa0-4916-b723-3d2b81632428"/>
+    <selectionType typeId="d8d6250a-a962-4494-a0a5-bc517be56aa7" valueTypeId="7246c2f9-c5d2-4794-bfd3-caead0efadf1"/>
+    <listType typeId="f4045e1a-f11c-4ae5-8a91-f63cb54ebe3d" valueTypeId="e6adc8e3-b2c9-43c2-ab23-6e0b26f45979"/>
+    <managerType typeId="dbf1ca10-b39b-4c4b-bc97-3b36bab9ed81" valueTypeId="c88bc165-babc-495e-8e1d-eb2660d03d71"/>
+  </producedTypes>
+  <name>ПоказателиРасчетаЗарплаты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Показатели расчета зарплаты</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.ПоказателиРасчетаЗарплаты.StandardAttribute.Code</inputByString>
+  <inputByString>Catalog.ПоказателиРасчетаЗарплаты.StandardAttribute.Description</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <predefined>
+    <items id="b6d9316c-25bf-4ae3-b2ef-98601de30de4">
+      <name>ФактДней</name>
+      <description>Факт дней</description>
+      <code xsi:type="core:StringValue">
+        <value>000000001</value>
+      </code>
+    </items>
+    <items id="d5007aa1-51f9-41d6-ac4a-79424d3fbe96">
+      <name>НормаДней</name>
+      <description>Норма дней</description>
+      <code xsi:type="core:StringValue">
+        <value>000000002</value>
+      </code>
+    </items>
+    <items id="95f0091f-8b78-4b4a-9483-c72a8755e5c5">
+      <name>РезультатБаза</name>
+      <description>Результат база</description>
+      <code xsi:type="core:StringValue">
+        <value>000000003</value>
+      </code>
+    </items>
+    <items id="222dfb09-ca71-4b21-a9b7-423a7f5efa9c">
+      <name>ОтработаноДнейБаза</name>
+      <description>Отработано дней база</description>
+      <code xsi:type="core:StringValue">
+        <value>000000004</value>
+      </code>
+    </items>
+  </predefined>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="3f2fed45-95fd-43a2-aadc-38ebb4e9cc50">
+    <name>Идентификатор</name>
+    <synonym>
+      <key>ru</key>
+      <value>Идентификатор</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>150</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>
