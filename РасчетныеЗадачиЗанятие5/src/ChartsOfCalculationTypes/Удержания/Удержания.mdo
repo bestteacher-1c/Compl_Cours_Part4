@@ -33,26 +33,9 @@
   <defaultObjectForm>ChartOfCalculationTypes.Удержания.Form.ФормаВидаРасчета</defaultObjectForm>
   <defaultListForm>ChartOfCalculationTypes.Удержания.Form.ФормаСписка</defaultListForm>
   <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
-  <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.Начисления</baseCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</baseCalculationTypes>
-  <predefined>
-    <items id="639dde45-6d38-4a1d-b9e2-52470ceb31a5">
-      <name>УдержаниеПроцентом</name>
-      <description>Удержание процентом</description>
-      <code xsi:type="core:StringValue">
-        <value>00002</value>
-      </code>
-      <base>ChartOfCalculationTypes.ОсновныеНачисления.ОкладПоДням</base>
-      <base>ChartOfCalculationTypes.ДополнительныеНачисления.ПремияПроцентом</base>
-    </items>
-    <items id="6755c53e-fcc5-4bcd-ac1f-7b4f692fd1ad">
-      <name>УдержаниеСуммой</name>
-      <description>Удержание суммой</description>
-      <code xsi:type="core:StringValue">
-        <value>00001</value>
-      </code>
-    </items>
-  </predefined>
+  <predefined/>
   <attributes uuid="47aa4bbe-9832-49bb-91de-79c262dd9668">
     <name>СпособРасчета</name>
     <synonym>
@@ -83,6 +66,19 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="07fa4a2c-8183-4fa1-ac00-718dba684508">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
   <attributes uuid="52f6f46b-bbfc-487a-926a-d92473faf9ce">
     <name>Формула</name>
     <synonym>
@@ -103,7 +99,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="e03896b6-e5ce-4cba-a1ca-9494422186d0">
+  <forms uuid="d4960c54-e000-408a-91ea-2dd21aef7f20">
     <name>ФормаВидаРасчета</name>
     <synonym>
       <key>ru</key>
@@ -112,7 +108,7 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="0c547026-25ad-451f-864c-5418d388b766">
+  <forms uuid="a9e79182-ba35-4c40-900b-7643819dd383">
     <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>

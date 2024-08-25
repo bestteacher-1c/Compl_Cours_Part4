@@ -9,20 +9,20 @@
     <recordType typeId="06c6a8c8-719f-492e-a4ed-424b3a4683f0" valueTypeId="6b40700f-849d-43e5-93eb-6e14f4e45d5c"/>
     <recalcsType typeId="058d4716-8a77-4c7f-ab7b-1df4bcb4a2f5" valueTypeId="46042792-deee-499a-9c60-a64c9bc1f5f7"/>
   </producedTypes>
-  <name>ОсновныеНачисления</name>
+  <name>Начисления</name>
   <synonym>
     <key>ru</key>
-    <value>Основные начисления</value>
+    <value>Начисления</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
-  <defaultListForm>CalculationRegister.ОсновныеНачисления.Form.ФормаСписка</defaultListForm>
+  <defaultListForm>CalculationRegister.Начисления.Form.ФормаСписка</defaultListForm>
   <periodicity>Month</periodicity>
   <actionPeriod>true</actionPeriod>
   <basePeriod>true</basePeriod>
   <schedule>InformationRegister.ГрафикиРаботы</schedule>
   <scheduleValue>InformationRegister.ГрафикиРаботы.Resource.ЗначениеДни</scheduleValue>
   <scheduleDate>InformationRegister.ГрафикиРаботы.Dimension.Дата</scheduleDate>
-  <chartOfCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</chartOfCalculationTypes>
+  <chartOfCalculationTypes>ChartOfCalculationTypes.Начисления</chartOfCalculationTypes>
   <standardAttributes>
     <dataHistory>Use</dataHistory>
     <name>RegistrationPeriod</name>
@@ -162,6 +162,19 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
+  <attributes uuid="a9dcc833-686e-494a-82b8-7b4bb0d81e84">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
   <attributes uuid="08bb9e6c-fbc5-4d39-99f3-4ef5e2279c66">
     <name>Размер</name>
     <synonym>
@@ -248,8 +261,8 @@
         <key>ru</key>
         <value>Физическое лицо</value>
       </synonym>
-      <registerDimension>CalculationRegister.ОсновныеНачисления.Dimension.ФизическоеЛицо</registerDimension>
-      <leadingRegisterData>CalculationRegister.ОсновныеНачисления.Dimension.ФизическоеЛицо</leadingRegisterData>
+      <registerDimension>CalculationRegister.Начисления.Dimension.ФизическоеЛицо</registerDimension>
+      <leadingRegisterData>CalculationRegister.Начисления.Dimension.ФизическоеЛицо</leadingRegisterData>
     </dimensions>
   </recalculations>
   <forms uuid="cf9918d6-9a3f-401a-9604-bd432fe40fae">

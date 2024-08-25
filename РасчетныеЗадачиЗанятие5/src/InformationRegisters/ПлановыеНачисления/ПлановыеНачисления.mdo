@@ -9,10 +9,10 @@
     <recordType typeId="277560c4-e2d5-498f-98d4-8613215fa3d3" valueTypeId="7e1cd556-b403-495a-a5e0-f63c534d618f"/>
     <recordManagerType typeId="50aebb3d-6918-4474-b620-1eab8c30e3e9" valueTypeId="b192fcbf-d962-4b26-849b-6ded1d861820"/>
   </producedTypes>
-  <name>ПлановыеОсновныеНачисления</name>
+  <name>ПлановыеНачисления</name>
   <synonym>
     <key>ru</key>
-    <value>Плановые основные начисления</value>
+    <value>Плановые начисления</value>
   </synonym>
   <useStandardCommands>true</useStandardCommands>
   <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
@@ -58,7 +58,7 @@
       <value>Вид расчета</value>
     </synonym>
     <type>
-      <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
+      <types>ChartOfCalculationTypesRef.Начисления</types>
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -68,5 +68,18 @@
     <fillValue xsi:type="core:UndefinedValue"/>
     <master>true</master>
     <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="9674e135-d9c6-4af7-bf61-3795ff0b951a">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
   </dimensions>
 </mdclass:InformationRegister>

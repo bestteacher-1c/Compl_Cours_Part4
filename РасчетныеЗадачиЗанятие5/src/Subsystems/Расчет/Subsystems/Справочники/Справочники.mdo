@@ -12,5 +12,6 @@
   <content>Catalog.Должности</content>
   <content>Catalog.ВидыГрафиковРаботы</content>
   <content>Catalog.ПоказателиРасчетаЗарплаты</content>
+  <content>InformationRegister.ДатаЗапретаИзменений</content>
   <parentSubsystem>Subsystem.Расчет</parentSubsystem>
 </mdclass:Subsystem>
