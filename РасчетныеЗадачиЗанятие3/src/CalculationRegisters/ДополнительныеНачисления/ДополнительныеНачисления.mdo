@@ -32,7 +32,7 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
-  <attributes uuid="69b235c5-71fe-4912-887d-7940fefcd1be">
+  <attributes uuid="5ab5e2a5-7246-4be9-b807-5c51a2cfeebe">
     <name>Показатель</name>
     <synonym>
       <key>ru</key>

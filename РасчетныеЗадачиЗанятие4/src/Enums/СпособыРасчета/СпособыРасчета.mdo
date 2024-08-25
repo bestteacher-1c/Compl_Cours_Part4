@@ -61,4 +61,11 @@
       <value>Компенсация за день</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="9e52385b-9008-4838-8753-ad7cc19b6b30">
+    <name>ПроцентомОтДоходовПодчиненных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Процентом от доходов подчиненных</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

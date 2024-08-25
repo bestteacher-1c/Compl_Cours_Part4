@@ -34,4 +34,11 @@
       <value>Перемещение</value>
     </synonym>
   </enumValues>
+  <enumValues uuid="5454e2f1-a979-4d82-b496-6c9aaaad8ba9">
+    <name>Болеет</name>
+    <synonym>
+      <key>ru</key>
+      <value>Болеет</value>
+    </synonym>
+  </enumValues>
 </mdclass:Enum>

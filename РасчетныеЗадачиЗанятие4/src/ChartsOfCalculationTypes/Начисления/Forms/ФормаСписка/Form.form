@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form">
+<form:Form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:form="http://g5.1c.ru/v8/dt/form" xmlns:schema="http://g5.1c.ru/v8/dt/data-composition-system/schema">
   <items xsi:type="form:FormGroup">
     <name>СписокКомпоновщикНастроекПользовательскиеНастройки</name>
     <id>1</id>
@@ -35,7 +35,7 @@
       <showLeftMargin>true</showLeftMargin>
       <united>true</united>
       <throughAlign>Auto</throughAlign>
-      <currentRowUse>DontUse</currentRowUse>
+      <currentRowUse>Auto</currentRowUse>
     </extInfo>
   </items>
   <items xsi:type="form:Table">
@@ -374,7 +374,7 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>СписокБазовыхНачислений.CalculationType</segments>
+          <segments>СписокБазовыхНачислений.ВидРасчета</segments>
         </dataPath>
         <extendedTooltip>
           <name>СписокБазовыхНачисленийВидРасчетаРасширеннаяПодсказка</name>
@@ -633,7 +633,7 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>СписокВытесняющийНачислений.CalculationType</segments>
+          <segments>СписокВытесняющийНачислений.ВидРасчета</segments>
         </dataPath>
         <extendedTooltip>
           <name>СписокВытесняющийНачисленийВидРасчетаРасширеннаяПодсказка</name>
@@ -894,7 +894,7 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>СписокВедущихВидовРасчета.CalculationType</segments>
+          <segments>СписокВедущихВидовРасчета.ВидРасчета</segments>
         </dataPath>
         <extendedTooltip>
           <name>СписокВедущихВидовРасчетаВидРасчетаРасширеннаяПодсказка</name>
@@ -1143,7 +1143,7 @@
       <showLeftMargin>true</showLeftMargin>
       <united>true</united>
       <throughAlign>Auto</throughAlign>
-      <currentRowUse>DontUse</currentRowUse>
+      <currentRowUse>Auto</currentRowUse>
     </extInfo>
   </items>
   <autoCommandBar>
@@ -1180,7 +1180,7 @@
     </edit>
     <main>true</main>
     <extInfo xsi:type="form:DynamicListExtInfo">
-      <mainTable>ChartOfCalculationTypes.ОсновныеНачисления</mainTable>
+      <mainTable>ChartOfCalculationTypes.Начисления</mainTable>
       <dynamicDataRead>true</dynamicDataRead>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <autoSaveUserSettings>true</autoSaveUserSettings>
@@ -1205,19 +1205,62 @@
     </edit>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
-	ОсновныеНачисленияБазовыеВидыРасчета.Ссылка,
-	ОсновныеНачисленияБазовыеВидыРасчета.НомерСтроки,
-	ОсновныеНачисленияБазовыеВидыРасчета.ВидРасчета,
-	ОсновныеНачисленияБазовыеВидыРасчета.Предопределенный,
-	ОсновныеНачисленияБазовыеВидыРасчета.ВидРасчета.СпособРасчета КАК СпособРасчета 
+	НачисленияБазовыеВидыРасчета.Ссылка,
+	НачисленияБазовыеВидыРасчета.НомерСтроки,
+	НачисленияБазовыеВидыРасчета.ВидРасчета,
+	НачисленияБазовыеВидыРасчета.Предопределенный,
+	НачисленияБазовыеВидыРасчета.ВидРасчета.СпособРасчета КАК СпособРасчета
 ИЗ
-	ПланВидовРасчета.ОсновныеНачисления.БазовыеВидыРасчета КАК ОсновныеНачисленияБазовыеВидыРасчета
+	ПланВидовРасчета.Начисления.БазовыеВидыРасчета КАК НачисленияБазовыеВидыРасчета
 ГДЕ
-	ОсновныеНачисленияБазовыеВидыРасчета.Ссылка = &amp;Ссылка</queryText>
+	НачисленияБазовыеВидыРасчета.Ссылка = &amp;Ссылка</queryText>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
       <autoSaveUserSettings>true</autoSaveUserSettings>
       <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ссылка</dataPath>
+        <field>Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НомерСтроки</dataPath>
+        <field>НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидРасчета</dataPath>
+        <field>ВидРасчета</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Предопределенный</dataPath>
+        <field>Предопределенный</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СпособРасчета</dataPath>
+        <field>СпособРасчета</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Способ расчета</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <parameters>
+        <name>Ссылка</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Ссылка</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>ChartOfCalculationTypesRef.Начисления</types>
+        </valueType>
+        <useRestriction>true</useRestriction>
+      </parameters>
     </extInfo>
   </attributes>
   <attributes>
@@ -1238,19 +1281,62 @@
     </edit>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
-	ОсновныеНачисленияВытесняющиеВидыРасчета.Ссылка,
-	ОсновныеНачисленияВытесняющиеВидыРасчета.ВидРасчета.СпособРасчета как СпособРасчета,
-	ОсновныеНачисленияВытесняющиеВидыРасчета.НомерСтроки,
-	ОсновныеНачисленияВытесняющиеВидыРасчета.ВидРасчета,
-	ОсновныеНачисленияВытесняющиеВидыРасчета.Предопределенный
+	НачисленияВытесняющиеВидыРасчета.Ссылка,
+	НачисленияВытесняющиеВидыРасчета.ВидРасчета.СпособРасчета как СпособРасчета,
+	НачисленияВытесняющиеВидыРасчета.НомерСтроки,
+	НачисленияВытесняющиеВидыРасчета.ВидРасчета,
+	НачисленияВытесняющиеВидыРасчета.Предопределенный
 ИЗ
-	ПланВидовРасчета.ОсновныеНачисления.ВытесняющиеВидыРасчета КАК ОсновныеНачисленияВытесняющиеВидыРасчета
+	ПланВидовРасчета.Начисления.ВытесняющиеВидыРасчета КАК НачисленияВытесняющиеВидыРасчета
 ГДЕ
-	ОсновныеНачисленияВытесняющиеВидыРасчета.Ссылка = &amp;Ссылка</queryText>
+	НачисленияВытесняющиеВидыРасчета.Ссылка = &amp;Ссылка</queryText>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
       <autoSaveUserSettings>true</autoSaveUserSettings>
       <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ссылка</dataPath>
+        <field>Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>СпособРасчета</dataPath>
+        <field>СпособРасчета</field>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Способ расчета</value>
+            </content>
+          </localValue>
+        </title>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НомерСтроки</dataPath>
+        <field>НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидРасчета</dataPath>
+        <field>ВидРасчета</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Предопределенный</dataPath>
+        <field>Предопределенный</field>
+      </fields>
+      <parameters>
+        <name>Ссылка</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Ссылка</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>ChartOfCalculationTypesRef.Начисления</types>
+        </valueType>
+        <useRestriction>true</useRestriction>
+      </parameters>
     </extInfo>
   </attributes>
   <attributes>
@@ -1271,23 +1357,61 @@
     </edit>
     <extInfo xsi:type="form:DynamicListExtInfo">
       <queryText>ВЫБРАТЬ
-	ОсновныеНачисленияВедущиеВидыРасчета.Ссылка,
-	ОсновныеНачисленияВедущиеВидыРасчета.НомерСтроки,
-	ОсновныеНачисленияВедущиеВидыРасчета.ВидРасчета,
-	ОсновныеНачисленияВедущиеВидыРасчета.Предопределенный
+	НачисленияВедущиеВидыРасчета.Ссылка,
+	НачисленияВедущиеВидыРасчета.НомерСтроки,
+	НачисленияВедущиеВидыРасчета.ВидРасчета,
+	НачисленияВедущиеВидыРасчета.Предопределенный
 ИЗ
-	ПланВидовРасчета.ОсновныеНачисления.ВедущиеВидыРасчета КАК ОсновныеНачисленияВедущиеВидыРасчета
+	ПланВидовРасчета.Начисления.ВедущиеВидыРасчета КАК НачисленияВедущиеВидыРасчета
 ГДЕ
-	ОсновныеНачисленияВедущиеВидыРасчета.Ссылка = &amp;Ссылка</queryText>
+	НачисленияВедущиеВидыРасчета.Ссылка = &amp;Ссылка</queryText>
       <autoFillAvailableFields>true</autoFillAvailableFields>
       <customQuery>true</customQuery>
       <autoSaveUserSettings>true</autoSaveUserSettings>
       <getInvisibleFieldPresentations>true</getInvisibleFieldPresentations>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Ссылка</dataPath>
+        <field>Ссылка</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>НомерСтроки</dataPath>
+        <field>НомерСтроки</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>ВидРасчета</dataPath>
+        <field>ВидРасчета</field>
+      </fields>
+      <fields xsi:type="schema:DataCompositionSchemaDataSetField">
+        <dataPath>Предопределенный</dataPath>
+        <field>Предопределенный</field>
+      </fields>
+      <parameters>
+        <name>Ссылка</name>
+        <title>
+          <localValue>
+            <content>
+              <key>ru</key>
+              <value>Ссылка</value>
+            </content>
+          </localValue>
+        </title>
+        <valueType>
+          <types>ChartOfCalculationTypesRef.Начисления</types>
+        </valueType>
+        <useRestriction>true</useRestriction>
+      </parameters>
     </extInfo>
   </attributes>
   <commandInterface>
     <navigationPanel/>
-    <commandBar/>
+    <commandBar>
+      <cmiFragmentRecord>
+        <command>0</command>
+        <group>FormCommandBarImportant</group>
+        <index>0</index>
+        <userVisible/>
+      </cmiFragmentRecord>
+    </commandBar>
   </commandInterface>
   <extInfo xsi:type="form:DynamicListFormExtInfo"/>
 </form:Form>

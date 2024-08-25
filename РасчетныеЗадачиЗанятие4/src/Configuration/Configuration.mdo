@@ -76,14 +76,13 @@
   <dataProcessors>DataProcessor.КонсольЗапросов</dataProcessors>
   <informationRegisters>InformationRegister.Сотрудники</informationRegisters>
   <informationRegisters>InformationRegister.ГрафикиРаботы</informationRegisters>
-  <informationRegisters>InformationRegister.ПлановыеОсновныеНачисления</informationRegisters>
-  <informationRegisters>InformationRegister.ПлановыеДополнительныеНачисления</informationRegisters>
+  <informationRegisters>InformationRegister.ПлановыеНачисления</informationRegisters>
   <informationRegisters>InformationRegister.ПлановыеУдержания</informationRegisters>
   <informationRegisters>InformationRegister.РуководителиПодразделений</informationRegisters>
-  <chartsOfCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</chartsOfCalculationTypes>
-  <chartsOfCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</chartsOfCalculationTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.Начисления</chartsOfCalculationTypes>
   <chartsOfCalculationTypes>ChartOfCalculationTypes.Удержания</chartsOfCalculationTypes>
-  <calculationRegisters>CalculationRegister.ОсновныеНачисления</calculationRegisters>
-  <calculationRegisters>CalculationRegister.ДополнительныеНачисления</calculationRegisters>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</chartsOfCalculationTypes>
+  <calculationRegisters>CalculationRegister.Начисления</calculationRegisters>
   <calculationRegisters>CalculationRegister.Удержания</calculationRegisters>
+  <calculationRegisters>CalculationRegister.ДополнительныеНачисления</calculationRegisters>
 </mdclass:Configuration>

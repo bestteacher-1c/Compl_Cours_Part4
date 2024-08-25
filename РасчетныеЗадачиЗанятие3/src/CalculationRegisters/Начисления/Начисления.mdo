@@ -161,7 +161,7 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
-  <attributes uuid="7473f897-2ef7-495d-8adf-ef427c4448b7">
+  <attributes uuid="b330270e-9b7f-4c98-8d50-adbac5485cba">
     <name>Показатель</name>
     <synonym>
       <key>ru</key>
