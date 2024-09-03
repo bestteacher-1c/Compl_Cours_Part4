@@ -213,7 +213,7 @@
         <common>true</common>
       </userVisible>
       <dataPath xsi:type="form:DataPath">
-        <segments>Объект.СписокЗаписейТребующихПерерасчета.Работник</segments>
+        <segments>Объект.СписокЗаписейТребующихПерерасчета.ФизическоеЛицо</segments>
       </dataPath>
       <extendedTooltip>
         <name>СписокЗаписейТребующихПерерасчетаРаботникРасширеннаяПодсказка</name>
@@ -343,6 +343,7 @@
       <source>СписокЗаписейТребующихПерерасчетаСостояниеПросмотра</source>
       <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
+        <horizontalLocation>Left</horizontalLocation>
       </extInfo>
     </viewStatusAddition>
     <searchControlAddition>

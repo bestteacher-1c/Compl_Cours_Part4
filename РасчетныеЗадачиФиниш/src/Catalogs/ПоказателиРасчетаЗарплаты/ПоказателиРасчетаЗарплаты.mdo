@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="d4761c05-86e5-4719-9c93-205fa2fdcd11">
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cb03044c-013b-42aa-b3c8-c2a253d17976">
   <producedTypes>
-    <objectType typeId="ebf53935-8c59-4378-9a20-f814890c9643" valueTypeId="88012e81-c674-4137-9e5e-d2a84cc85f94"/>
-    <refType typeId="5975d949-3787-4a32-9d6f-8a5d6131cc7d" valueTypeId="618eb1a0-76cc-4ba4-aa1a-8dd782a534f2"/>
-    <selectionType typeId="e52de942-4208-493f-94a3-d0482fa5b50d" valueTypeId="06cea0d2-813f-478d-87a3-fe36338f1f3a"/>
-    <listType typeId="9360e2fa-375a-461f-a7ec-3ccc0b9bd5f0" valueTypeId="97874c83-637b-417d-8f53-8f45efe12fcb"/>
-    <managerType typeId="44ee7fe1-7526-4b71-a383-f6d325565e9a" valueTypeId="5c8d02ac-5da9-4de6-8f05-05191f0f8d0e"/>
+    <objectType typeId="fa5af233-4a03-4a1a-83d8-49151743e854" valueTypeId="eff0d247-ebfc-4310-b0b2-77697304f30d"/>
+    <refType typeId="b353907d-9554-4fe5-9a07-47efa1d21f71" valueTypeId="6fce2c93-6c54-4e3f-a268-be5f924f4256"/>
+    <selectionType typeId="9394440e-6166-4a97-9212-2a8888b9c6a2" valueTypeId="71dc0658-7d19-4ba7-93c8-3208327bbe2e"/>
+    <listType typeId="9bd440e9-09b4-4794-92eb-1a62b7d95c09" valueTypeId="cd1ef6ed-d11c-4d06-be0f-d87260cf59b9"/>
+    <managerType typeId="13832294-8a37-4c5e-b804-f73f4dec9095" valueTypeId="ae3c685e-db91-46ea-8eaa-bafc2dda293c"/>
   </producedTypes>
   <name>ПоказателиРасчетаЗарплаты</name>
   <synonym>
@@ -60,7 +60,7 @@
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
-  <attributes uuid="2f522eb3-9cbb-4b3d-9820-58acc038daf9">
+  <attributes uuid="1582f2f0-a158-4a3e-8219-6f13b9ae0ba9">
     <name>Идентификатор</name>
     <synonym>
       <key>ru</key>

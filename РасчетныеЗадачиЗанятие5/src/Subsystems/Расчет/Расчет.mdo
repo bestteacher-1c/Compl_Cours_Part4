@@ -10,7 +10,6 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.Документы</picture>
   </picture>
-  <content>DataProcessor.ИнструментыРазработчикаКонсольЗапросов</content>
   <content>DataProcessor.ГрафическоеПредставлениеОсновныхНачислений</content>
   <content>DataProcessor.Перерасчет</content>
   <content>Constant.ТекущийПериод</content>

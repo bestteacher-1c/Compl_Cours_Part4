@@ -35,7 +35,6 @@
   <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.Начисления</baseCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</baseCalculationTypes>
-  <predefined/>
   <attributes uuid="47aa4bbe-9832-49bb-91de-79c262dd9668">
     <name>СпособРасчета</name>
     <synonym>
@@ -77,6 +76,7 @@
     </type>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </attributes>
   <attributes uuid="52f6f46b-bbfc-487a-926a-d92473faf9ce">

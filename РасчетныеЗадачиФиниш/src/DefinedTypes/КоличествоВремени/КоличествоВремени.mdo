@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="cc444dfa-571e-43db-b2ad-a56ae7400a53">
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="4f23f668-2691-46d1-820e-04d7eacb2a78">
   <producedTypes>
-    <containerType typeId="7d81346a-7fab-46ba-9307-2e19a8587eee" valueTypeId="2ecdb1f1-9a1a-4297-aef7-8dad589b1369"/>
+    <containerType typeId="eca3981b-e23e-43cf-bfc6-67afa3f76e44" valueTypeId="d167e96e-cccb-4c2b-9b1c-6fabdcf5c574"/>
   </producedTypes>
   <name>КоличествоВремени</name>
   <synonym>

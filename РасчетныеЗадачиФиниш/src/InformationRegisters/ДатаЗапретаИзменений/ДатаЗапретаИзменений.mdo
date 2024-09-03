@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="c530cf27-b24a-44d2-8239-d70712ef1910">
+  <producedTypes>
+    <selectionType typeId="7d39fc7d-5a17-4501-a6ce-a98f5797509d" valueTypeId="866ff60d-c893-4a73-b98b-583b80d0f146"/>
+    <listType typeId="db516d1a-60fa-4a44-a20e-d0c6687ed181" valueTypeId="0f74790f-c050-48f7-bb8f-4d26984f2a0f"/>
+    <managerType typeId="89dd3b6c-fff7-44e8-aed4-ce47af98fbd2" valueTypeId="fdc02869-39d0-420f-a641-e4715a20c768"/>
+    <recordSetType typeId="a2539fda-73a0-4043-ae2f-b27f9e339ef7" valueTypeId="24198ff6-3811-4026-8ceb-37d713fccabb"/>
+    <recordKeyType typeId="76d495dc-a970-4120-b3b9-be3a3cf526a3" valueTypeId="62207431-60ce-4884-b73e-b16bfa1b008a"/>
+    <recordType typeId="dace7e36-fddb-455f-9377-e231162154c3" valueTypeId="e242aad3-770b-4592-9ba1-0a4a1b3d9942"/>
+    <recordManagerType typeId="ab97ae2f-33bb-49d5-8b2a-3dbe4573cff9" valueTypeId="b58f6b28-df66-4d8b-8e4b-04a6ab63e765"/>
+  </producedTypes>
+  <name>ДатаЗапретаИзменений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Дата запрета изменений</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <resources uuid="a6eaf9ad-99c2-46c5-951e-dac990cc57d3">
+    <name>ДатаЗапрета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата запрета</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers>
+        <dateFractions>Date</dateFractions>
+      </dateQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+</mdclass:InformationRegister>

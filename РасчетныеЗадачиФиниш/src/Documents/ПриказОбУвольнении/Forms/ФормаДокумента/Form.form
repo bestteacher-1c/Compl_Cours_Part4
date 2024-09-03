@@ -421,13 +421,13 @@
   <commandInterface>
     <navigationPanel>
       <cmiFragmentRecord>
-        <command>InformationRegister.ПлановыеДополнительныеНачисления.StandardCommand.OpenByRecorder</command>
+        <command>0</command>
         <userVisible>
           <common>true</common>
         </userVisible>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
-        <command>InformationRegister.ПлановыеОсновныеНачисления.StandardCommand.OpenByRecorder</command>
+        <command>InformationRegister.ПлановыеНачисления.StandardCommand.OpenByRecorder</command>
         <userVisible>
           <common>true</common>
         </userVisible>

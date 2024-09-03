@@ -48,9 +48,8 @@
   <commonPictures>CommonPicture.Сервис</commonPictures>
   <commonPictures>CommonPicture.ФоновыйПроцесс</commonPictures>
   <commonModules>CommonModule.Сервис</commonModules>
-  <commonModules>CommonModule.Серверный</commonModules>
   <commonModules>CommonModule.ОбщийМодульСервер</commonModules>
-  <commonModules>CommonModule.Расчет</commonModules>
+  <commonModules>CommonModule.ОбщийМодульРасчетРесурсов</commonModules>
   <eventSubscriptions>EventSubscription.ЗаполнениеНовогоДокумента</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроведениеКадровыхДокументов</eventSubscriptions>
   <definedTypes>DefinedType.ПоложительноеЧисло</definedTypes>
@@ -78,7 +77,6 @@
   <enums>Enum.ПроцентыВыплатыБольничного</enums>
   <dataProcessors>DataProcessor.ГрафическоеПредставлениеОсновныхНачислений</dataProcessors>
   <dataProcessors>DataProcessor.Перерасчет</dataProcessors>
-  <dataProcessors>DataProcessor.ИнструментыРазработчикаКонсольЗапросов</dataProcessors>
   <dataProcessors>DataProcessor.КонсольЗапросов</dataProcessors>
   <informationRegisters>InformationRegister.Сотрудники</informationRegisters>
   <informationRegisters>InformationRegister.ГрафикиРаботы</informationRegisters>

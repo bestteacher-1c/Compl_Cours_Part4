@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="579751d6-abb4-4bd0-8a10-f89a72072b15">
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e5064fb5-cb89-4368-866b-79d3b6386435">
   <producedTypes>
-    <containerType typeId="b7e41fa9-a172-4a86-a80e-7e812360cc0f" valueTypeId="f0cc170c-755a-4397-ac4c-396c075e76df"/>
+    <containerType typeId="0c965b57-eb0f-49f0-b1a7-da535e0c6487" valueTypeId="4a998b74-f98f-4164-95b6-2d7e4f18b0a3"/>
   </producedTypes>
   <name>ПоложительноеЧисло</name>
   <synonym>

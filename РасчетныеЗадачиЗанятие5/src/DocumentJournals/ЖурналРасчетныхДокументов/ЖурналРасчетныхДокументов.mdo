@@ -14,6 +14,7 @@
   <useStandardCommands>true</useStandardCommands>
   <registeredDocuments>Document.НачислениеЗарплаты</registeredDocuments>
   <registeredDocuments>Document.ПремияРуководителюПодразделения</registeredDocuments>
+  <registeredDocuments>Document.БольничныйЛист</registeredDocuments>
   <columns uuid="1bc26466-0ae1-4191-ac45-674dd98d90b7">
     <name>ПериодРегистрации</name>
     <synonym>
@@ -22,6 +23,7 @@
     </synonym>
     <references>Document.НачислениеЗарплаты.Attribute.ПериодРегистрации</references>
     <references>Document.ПремияРуководителюПодразделения.Attribute.ПериодРегистрации</references>
+    <references>Document.БольничныйЛист.Attribute.ПериодРегистрации</references>
   </columns>
   <columns uuid="6f482649-3eb9-49da-95d5-776dc4a7191b">
     <name>Работник</name>

@@ -3,7 +3,7 @@
   <commandsOrder>
     <orderFragments>
       <group>NavigationPanelOrdinary</group>
-      <commands>ChartOfCalculationTypes.ОсновныеНачисления.StandardCommand.OpenList</commands>
+      <commands>ChartOfCalculationTypes.Начисления.StandardCommand.OpenList</commands>
       <commands>ChartOfCalculationTypes.ДополнительныеНачисления.StandardCommand.OpenList</commands>
       <commands>ChartOfCalculationTypes.Удержания.StandardCommand.OpenList</commands>
     </orderFragments>
