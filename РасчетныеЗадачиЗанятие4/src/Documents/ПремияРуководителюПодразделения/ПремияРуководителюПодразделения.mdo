@@ -22,7 +22,6 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.ПремияРуководителюПодразделения.Form.ФормаДокумента</defaultObjectForm>
   <registerRecords>CalculationRegister.ДополнительныеНачисления</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
@@ -105,6 +104,28 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="21dbf215-d0bc-47af-851d-626201cd1095">
+    <name>ВидРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.Начисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.СпособРасчета</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.СпособыРасчета.EnumValue.ПроцентомОтДоходовПодчиненных</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <forms uuid="3e93eb89-0ba3-446c-b26b-02f72ec3ce3a">
     <name>ФормаДокумента</name>
     <synonym>
@@ -119,10 +140,10 @@
       <objectType typeId="64dd7371-f830-4ed7-9bfe-581745f85bbb" valueTypeId="88f67be4-e65c-4d62-9af7-ab16653bb410"/>
       <rowType typeId="f4c70d89-8510-482e-a492-7f4cd82c9f02" valueTypeId="2f9e8e2a-81e8-49c6-98a7-3aa846198e36"/>
     </producedTypes>
-    <name>ОсновныеНачисления</name>
+    <name>Начисления</name>
     <synonym>
       <key>ru</key>
-      <value>Основные начисления</value>
+      <value>Начисления</value>
     </synonym>
     <attributes uuid="52eb888a-9f49-4d8f-8fd2-5e23f0b4f407">
       <name>ФизическоеЛицо</name>
@@ -173,7 +194,7 @@
         <value>Вид расчета</value>
       </synonym>
       <type>
-        <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -234,6 +255,20 @@
       <type>
         <types>Date</types>
         <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="25501c35-4182-4bc8-ac4f-c14ff1359583">
+      <name>Показатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Показатель</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

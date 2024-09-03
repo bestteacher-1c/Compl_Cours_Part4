@@ -64,7 +64,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.БольничныйЛист.Form.ФормаДокумента</defaultObjectForm>
-  <registerRecords>CalculationRegister.ОсновныеНачисления</registerRecords>
+  <registerRecords>CalculationRegister.Начисления</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="255d0ba0-9b30-49ef-a590-f222d03639d2">
@@ -240,10 +240,10 @@
       <objectType typeId="4da10184-74fa-49e6-b061-4ee24a5d099c" valueTypeId="4357fd0f-79f2-42c3-b55a-683394648bd4"/>
       <rowType typeId="b7a7f46f-0b50-43c2-98b6-2daa59314b42" valueTypeId="558c6037-0a01-4a80-842e-950c3efce340"/>
     </producedTypes>
-    <name>ОсновныеНачисления</name>
+    <name>Начисления</name>
     <synonym>
       <key>ru</key>
-      <value>Основные начисления</value>
+      <value>Начисления</value>
     </synonym>
     <standardAttributes>
       <dataHistory>Use</dataHistory>
@@ -302,7 +302,7 @@
         <value>Вид расчета</value>
       </synonym>
       <type>
-        <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -363,6 +363,20 @@
       <type>
         <types>Date</types>
         <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="a980e5c5-03ac-49c4-be16-727560f012d3">
+      <name>Показатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Показатель</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>

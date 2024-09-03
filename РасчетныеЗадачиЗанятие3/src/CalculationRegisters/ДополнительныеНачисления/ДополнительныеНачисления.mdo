@@ -32,6 +32,19 @@
     <maxValue xsi:type="core:UndefinedValue"/>
     <fullTextSearch>Use</fullTextSearch>
   </resources>
+  <attributes uuid="5ab5e2a5-7246-4be9-b807-5c51a2cfeebe">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+  </attributes>
   <attributes uuid="f593a650-3daf-4221-b0e2-6fc4efa680a1">
     <name>Размер</name>
     <synonym>

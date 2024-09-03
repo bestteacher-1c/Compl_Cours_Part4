@@ -13,8 +13,8 @@
   <defaultForm>DocumentJournal.ЖурналРасчетныхДокументов.Form.ФормаСписка</defaultForm>
   <useStandardCommands>true</useStandardCommands>
   <registeredDocuments>Document.НачислениеЗарплаты</registeredDocuments>
-  <registeredDocuments>Document.БольничныйЛист</registeredDocuments>
   <registeredDocuments>Document.ПремияРуководителюПодразделения</registeredDocuments>
+  <registeredDocuments>Document.БольничныйЛист</registeredDocuments>
   <columns uuid="1bc26466-0ae1-4191-ac45-674dd98d90b7">
     <name>ПериодРегистрации</name>
     <synonym>
@@ -22,8 +22,8 @@
       <value>Период регистрации</value>
     </synonym>
     <references>Document.НачислениеЗарплаты.Attribute.ПериодРегистрации</references>
-    <references>Document.БольничныйЛист.Attribute.ПериодРегистрации</references>
     <references>Document.ПремияРуководителюПодразделения.Attribute.ПериодРегистрации</references>
+    <references>Document.БольничныйЛист.Attribute.ПериодРегистрации</references>
   </columns>
   <columns uuid="6f482649-3eb9-49da-95d5-776dc4a7191b">
     <name>Работник</name>
@@ -31,7 +31,6 @@
       <key>ru</key>
       <value>Работник</value>
     </synonym>
-    <references>Document.БольничныйЛист.Attribute.ФизическоеЛицо</references>
     <references>Document.ПремияРуководителюПодразделения.Attribute.ФизическоеЛицо</references>
   </columns>
   <forms uuid="4e7e7369-b1c4-4b24-91a8-deaaa17521ab">

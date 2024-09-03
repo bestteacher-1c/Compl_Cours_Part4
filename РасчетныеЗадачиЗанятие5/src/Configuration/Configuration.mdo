@@ -48,9 +48,8 @@
   <commonPictures>CommonPicture.Сервис</commonPictures>
   <commonPictures>CommonPicture.ФоновыйПроцесс</commonPictures>
   <commonModules>CommonModule.Сервис</commonModules>
-  <commonModules>CommonModule.Серверный</commonModules>
-  <commonModules>CommonModule.Расчет</commonModules>
-  <commonModules>CommonModule.Сервер</commonModules>
+  <commonModules>CommonModule.ОбщийМодульСервер</commonModules>
+  <commonModules>CommonModule.ОбщийМодульРасчетРесурсов</commonModules>
   <eventSubscriptions>EventSubscription.ЗаполнениеНовогоДокумента</eventSubscriptions>
   <eventSubscriptions>EventSubscription.ПроведениеКадровыхДокументов</eventSubscriptions>
   <definedTypes>DefinedType.ПоложительноеЧисло</definedTypes>
@@ -62,6 +61,7 @@
   <catalogs>Catalog.Подразделения</catalogs>
   <catalogs>Catalog.Должности</catalogs>
   <catalogs>Catalog.ВидыГрафиковРаботы</catalogs>
+  <catalogs>Catalog.ПоказателиРасчетаЗарплаты</catalogs>
   <documents>Document.ПриказОПриеме</documents>
   <documents>Document.КадровоеИзменение</documents>
   <documents>Document.ПриказОбУвольнении</documents>
@@ -77,19 +77,18 @@
   <enums>Enum.ПроцентыВыплатыБольничного</enums>
   <dataProcessors>DataProcessor.ГрафическоеПредставлениеОсновныхНачислений</dataProcessors>
   <dataProcessors>DataProcessor.Перерасчет</dataProcessors>
-  <dataProcessors>DataProcessor.ИнструментыРазработчикаКонсольЗапросов</dataProcessors>
   <dataProcessors>DataProcessor.КонсольЗапросов</dataProcessors>
   <informationRegisters>InformationRegister.Сотрудники</informationRegisters>
   <informationRegisters>InformationRegister.ГрафикиРаботы</informationRegisters>
-  <informationRegisters>InformationRegister.ПлановыеОсновныеНачисления</informationRegisters>
-  <informationRegisters>InformationRegister.ПлановыеДополнительныеНачисления</informationRegisters>
+  <informationRegisters>InformationRegister.ПлановыеНачисления</informationRegisters>
   <informationRegisters>InformationRegister.ПлановыеУдержания</informationRegisters>
   <informationRegisters>InformationRegister.РуководителиПодразделений</informationRegisters>
+  <informationRegisters>InformationRegister.ДатаЗапретаИзменений</informationRegisters>
   <accumulationRegisters>AccumulationRegister.ВзаиморасчетыСРаботниками</accumulationRegisters>
-  <chartsOfCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</chartsOfCalculationTypes>
-  <chartsOfCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</chartsOfCalculationTypes>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.Начисления</chartsOfCalculationTypes>
   <chartsOfCalculationTypes>ChartOfCalculationTypes.Удержания</chartsOfCalculationTypes>
-  <calculationRegisters>CalculationRegister.ОсновныеНачисления</calculationRegisters>
-  <calculationRegisters>CalculationRegister.ДополнительныеНачисления</calculationRegisters>
+  <chartsOfCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</chartsOfCalculationTypes>
+  <calculationRegisters>CalculationRegister.Начисления</calculationRegisters>
   <calculationRegisters>CalculationRegister.Удержания</calculationRegisters>
+  <calculationRegisters>CalculationRegister.ДополнительныеНачисления</calculationRegisters>
 </mdclass:Configuration>

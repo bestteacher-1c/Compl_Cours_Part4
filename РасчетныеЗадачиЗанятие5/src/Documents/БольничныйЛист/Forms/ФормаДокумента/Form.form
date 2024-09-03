@@ -185,6 +185,56 @@
       <currentRowUse>Auto</currentRowUse>
     </extInfo>
   </items>
+  <items xsi:type="form:FormField">
+    <name>ВидРасчета</name>
+    <id>123</id>
+    <visible>true</visible>
+    <enabled>true</enabled>
+    <userVisible>
+      <common>true</common>
+    </userVisible>
+    <dataPath xsi:type="form:DataPath">
+      <segments>Объект.ВидРасчета</segments>
+    </dataPath>
+    <extendedTooltip>
+      <name>ВидРасчетаРасширеннаяПодсказка</name>
+      <id>125</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <type>Label</type>
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <extInfo xsi:type="form:LabelDecorationExtInfo">
+        <horizontalAlign>Left</horizontalAlign>
+      </extInfo>
+    </extendedTooltip>
+    <contextMenu>
+      <name>ВидРасчетаКонтекстноеМеню</name>
+      <id>124</id>
+      <visible>true</visible>
+      <enabled>true</enabled>
+      <userVisible>
+        <common>true</common>
+      </userVisible>
+      <autoFill>true</autoFill>
+    </contextMenu>
+    <type>InputField</type>
+    <editMode>Enter</editMode>
+    <showInHeader>true</showInHeader>
+    <headerHorizontalAlign>Left</headerHorizontalAlign>
+    <showInFooter>true</showInFooter>
+    <extInfo xsi:type="form:InputFieldExtInfo">
+      <autoMaxWidth>true</autoMaxWidth>
+      <autoMaxHeight>true</autoMaxHeight>
+      <wrap>true</wrap>
+      <chooseType>true</chooseType>
+      <typeDomainEnabled>true</typeDomainEnabled>
+      <textEdit>true</textEdit>
+    </extInfo>
+  </items>
   <items xsi:type="form:FormGroup">
     <name>Группа2</name>
     <id>37</id>
@@ -673,7 +723,7 @@
           <common>true</common>
         </userVisible>
         <dataPath xsi:type="form:DataPath">
-          <segments>Объект.ОсновныеНачисления</segments>
+          <segments>Объект.Начисления</segments>
         </dataPath>
         <titleLocation>None</titleLocation>
         <items xsi:type="form:FormGroup">
@@ -688,7 +738,7 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>Объект.ОсновныеНачисления.LineNumber</segments>
+              <segments>Объект.Начисления.LineNumber</segments>
             </dataPath>
             <extendedTooltip>
               <name>ОсновныеНачисленияНомерСтрокиРасширеннаяПодсказка</name>
@@ -738,7 +788,7 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>Объект.ОсновныеНачисления.Сторно</segments>
+              <segments>Объект.Начисления.Сторно</segments>
             </dataPath>
             <extendedTooltip>
               <name>ОсновныеНачисленияСторноРасширеннаяПодсказка</name>
@@ -817,7 +867,7 @@
                 <common>true</common>
               </userVisible>
               <dataPath xsi:type="form:DataPath">
-                <segments>Объект.ОсновныеНачисления.ФизическоеЛицо</segments>
+                <segments>Объект.Начисления.ФизическоеЛицо</segments>
               </dataPath>
               <extendedTooltip>
                 <name>ОсновныеНачисленияФизическоеЛицоРасширеннаяПодсказка</name>
@@ -867,7 +917,7 @@
                 <common>true</common>
               </userVisible>
               <dataPath xsi:type="form:DataPath">
-                <segments>Объект.ОсновныеНачисления.ГрафикРаботы</segments>
+                <segments>Объект.Начисления.ГрафикРаботы</segments>
               </dataPath>
               <extendedTooltip>
                 <name>ОсновныеНачисленияГрафикРаботыРасширеннаяПодсказка</name>
@@ -949,7 +999,7 @@
                 <common>true</common>
               </userVisible>
               <dataPath xsi:type="form:DataPath">
-                <segments>Объект.ОсновныеНачисления.Подразделение</segments>
+                <segments>Объект.Начисления.Подразделение</segments>
               </dataPath>
               <extendedTooltip>
                 <name>ОсновныеНачисленияПодразделениеРасширеннаяПодсказка</name>
@@ -999,7 +1049,7 @@
                 <common>true</common>
               </userVisible>
               <dataPath xsi:type="form:DataPath">
-                <segments>Объект.ОсновныеНачисления.Должность</segments>
+                <segments>Объект.Начисления.Должность</segments>
               </dataPath>
               <extendedTooltip>
                 <name>ОсновныеНачисленияДолжностьРасширеннаяПодсказка</name>
@@ -1111,7 +1161,7 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>Объект.ОсновныеНачисления.ВидРасчета</segments>
+              <segments>Объект.Начисления.ВидРасчета</segments>
             </dataPath>
             <extendedTooltip>
               <name>ОсновныеНачисленияВидРасчетаРасширеннаяПодсказка</name>
@@ -1161,7 +1211,7 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>Объект.ОсновныеНачисления.Размер</segments>
+              <segments>Объект.Начисления.Размер</segments>
             </dataPath>
             <extendedTooltip>
               <name>ОсновныеНачисленияРазмерРасширеннаяПодсказка</name>
@@ -1244,7 +1294,7 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>Объект.ОсновныеНачисления.Результат</segments>
+              <segments>Объект.Начисления.Результат</segments>
             </dataPath>
             <extendedTooltip>
               <name>ОсновныеНачисленияРезультатРасширеннаяПодсказка</name>
@@ -1294,7 +1344,7 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>Объект.ОсновныеНачисления.ОтработаноДней</segments>
+              <segments>Объект.Начисления.ОтработаноДней</segments>
             </dataPath>
             <extendedTooltip>
               <name>ОсновныеНачисленияОтработаноДнейРасширеннаяПодсказка</name>
@@ -1377,7 +1427,7 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>Объект.ОсновныеНачисления.ПериодДействияНачало</segments>
+              <segments>Объект.Начисления.ПериодДействияНачало</segments>
             </dataPath>
             <extendedTooltip>
               <name>ОсновныеНачисленияПериодДействияНачалоРасширеннаяПодсказка</name>
@@ -1427,7 +1477,7 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>Объект.ОсновныеНачисления.ПериодДействияКонец</segments>
+              <segments>Объект.Начисления.ПериодДействияКонец</segments>
             </dataPath>
             <extendedTooltip>
               <name>ОсновныеНачисленияПериодДействияКонецРасширеннаяПодсказка</name>
@@ -1510,7 +1560,7 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>Объект.ОсновныеНачисления.БазовыйПериодНачало</segments>
+              <segments>Объект.Начисления.БазовыйПериодНачало</segments>
             </dataPath>
             <extendedTooltip>
               <name>ОсновныеНачисленияБазовыйПериодНачалоРасширеннаяПодсказка</name>
@@ -1560,7 +1610,7 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>Объект.ОсновныеНачисления.БазовыйПериодКонец</segments>
+              <segments>Объект.Начисления.БазовыйПериодКонец</segments>
             </dataPath>
             <extendedTooltip>
               <name>ОсновныеНачисленияБазовыйПериодКонецРасширеннаяПодсказка</name>
@@ -1972,24 +2022,6 @@
     <main>true</main>
     <savedData>true</savedData>
   </attributes>
-  <attributes>
-    <name>ДГ</name>
-    <title>
-      <key>ru</key>
-      <value>ДГ</value>
-    </title>
-    <id>2</id>
-    <valueType>
-      <types>GanttChart</types>
-    </valueType>
-    <view>
-      <common>true</common>
-    </view>
-    <edit>
-      <common>true</common>
-    </edit>
-    <extInfo xsi:type="form:GanttChartExtInfo"/>
-  </attributes>
   <formCommands>
     <name>РассчитатьРесурсы</name>
     <title>
@@ -2010,7 +2042,7 @@
   <commandInterface>
     <navigationPanel>
       <cmiFragmentRecord>
-        <command>AccumulationRegister.ВзаиморасчетыСРаботниками.StandardCommand.OpenByRecorder</command>
+        <command>0</command>
         <group>FormNavigationPanelSeeAlso</group>
         <index>0</index>
         <userVisible>
@@ -2018,7 +2050,7 @@
         </userVisible>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
-        <command>CalculationRegister.ОсновныеНачисления.StandardCommand.OpenByRecorder</command>
+        <command>CalculationRegister.Начисления.StandardCommand.OpenByRecorder</command>
         <group>FormNavigationPanelImportant</group>
         <index>0</index>
         <userVisible>

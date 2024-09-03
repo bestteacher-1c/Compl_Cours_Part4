@@ -66,7 +66,7 @@
   <defaultObjectForm>Document.БольничныйЛист.Form.ФормаДокумента</defaultObjectForm>
   <realTimePosting>Deny</realTimePosting>
   <registerRecords>AccumulationRegister.ВзаиморасчетыСРаботниками</registerRecords>
-  <registerRecords>CalculationRegister.ОсновныеНачисления</registerRecords>
+  <registerRecords>CalculationRegister.Начисления</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="255d0ba0-9b30-49ef-a590-f222d03639d2">
@@ -198,7 +198,29 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="d482f16e-c502-4962-b3b7-8e3081a8c487">
+  <attributes uuid="17a6713a-ae17-4e1c-a6f8-05d76d4ca9a0">
+    <name>ВидРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.Начисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.СпособРасчета</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.СпособыРасчета.EnumValue.ПоСреднемуЗаработку</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="3d059147-72c2-4456-8dfb-ca892b36362f">
     <name>ФормаДокумента</name>
     <synonym>
       <key>ru</key>
@@ -212,10 +234,10 @@
       <objectType typeId="039c5051-95fc-486f-a5cb-a99deafdd147" valueTypeId="70e3dc87-81b4-40df-a795-fac6e8cb063f"/>
       <rowType typeId="442e2ffb-93f3-4806-8be4-31401685bed9" valueTypeId="2b70746a-71c5-4e31-80f1-9ccf3b5b36f5"/>
     </producedTypes>
-    <name>ОсновныеНачисления</name>
+    <name>Начисления</name>
     <synonym>
       <key>ru</key>
-      <value>Основные начисления</value>
+      <value>Начисления</value>
     </synonym>
     <attributes uuid="36a02b2b-e4ea-4f74-a129-b3c56f81729f">
       <name>ФизическоеЛицо</name>
@@ -266,7 +288,7 @@
         <value>Вид расчета</value>
       </synonym>
       <type>
-        <types>ChartOfCalculationTypesRef.ОсновныеНачисления</types>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
@@ -331,6 +353,19 @@
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8a69401c-3dca-4659-b14a-fb3a3b1ab1af">
+      <name>Показатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Показатель</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
     <attributes uuid="f7c1cc31-5dd9-4bcd-858c-1e46f3bcc90d">

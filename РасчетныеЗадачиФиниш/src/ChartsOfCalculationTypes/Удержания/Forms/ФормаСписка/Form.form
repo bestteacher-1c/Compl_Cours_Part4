@@ -234,6 +234,7 @@
       <source>СписокСостояниеПросмотра</source>
       <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
+        <horizontalLocation>Left</horizontalLocation>
       </extInfo>
     </viewStatusAddition>
     <searchControlAddition>
@@ -496,6 +497,7 @@
         <source>СписокБазовыхНачисленийСостояниеПросмотра</source>
         <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
           <autoMaxWidth>true</autoMaxWidth>
+          <horizontalLocation>Left</horizontalLocation>
         </extInfo>
       </viewStatusAddition>
       <searchControlAddition>
@@ -754,6 +756,7 @@
         <source>СписокВедущихВидовРасчетаСостояниеПросмотра</source>
         <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
           <autoMaxWidth>true</autoMaxWidth>
+          <horizontalLocation>Left</horizontalLocation>
         </extInfo>
       </viewStatusAddition>
       <searchControlAddition>
@@ -990,7 +993,14 @@
   </attributes>
   <commandInterface>
     <navigationPanel/>
-    <commandBar/>
+    <commandBar>
+      <cmiFragmentRecord>
+        <command>0</command>
+        <group>FormCommandBarImportant</group>
+        <index>0</index>
+        <userVisible/>
+      </cmiFragmentRecord>
+    </commandBar>
   </commandInterface>
   <extInfo xsi:type="form:DynamicListFormExtInfo"/>
 </form:Form>

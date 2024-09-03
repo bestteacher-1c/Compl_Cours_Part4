@@ -3,7 +3,6 @@
   <commandsOrder>
     <orderFragments>
       <group>ActionsPanelTools</group>
-      <commands>DataProcessor.ИнструментыРазработчикаКонсольЗапросов.StandardCommand.Open</commands>
       <commands>DataProcessor.ГрафическоеПредставлениеОсновныхНачислений.StandardCommand.Open</commands>
       <commands>DataProcessor.Перерасчет.StandardCommand.Open</commands>
     </orderFragments>

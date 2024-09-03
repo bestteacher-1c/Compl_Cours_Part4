@@ -22,10 +22,10 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.ПремияРуководителюПодразделения.Form.ФормаДокумента</defaultObjectForm>
+  <defaultObjectForm>Document.ПремияРуководителюПодразделения.Form.ФормаДокумента1</defaultObjectForm>
   <realTimePosting>Deny</realTimePosting>
   <registerRecords>AccumulationRegister.ВзаиморасчетыСРаботниками</registerRecords>
-  <registerRecords>CalculationRegister.ДополнительныеНачисления</registerRecords>
+  <registerRecords>CalculationRegister.Начисления</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="3791066c-6cf6-4f52-b9f6-0e1d1b9a1b80">
@@ -92,6 +92,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
+  <attributes uuid="6da5ead5-d9e3-4b9b-b3af-091051a86718">
+    <name>ГрафикРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>График работы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыГрафиковРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
   <attributes uuid="cb952989-ca1e-454f-b546-950899854931">
     <name>РазмерПремии</name>
     <synonym>
@@ -107,7 +122,29 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="3e93eb89-0ba3-446c-b26b-02f72ec3ce3a">
+  <attributes uuid="110febc8-789a-47fa-b029-35b9f2a219f9">
+    <name>ВидРасчета</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вид расчета</value>
+    </synonym>
+    <type>
+      <types>ChartOfCalculationTypesRef.Начисления</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <choiceParameters>
+      <name>Отбор.СпособРасчета</name>
+      <value xsi:type="core:ReferenceValue">
+        <value>Enum.СпособыРасчета.EnumValue.ПроцентомОтДоходовПодчиненных</value>
+      </value>
+    </choiceParameters>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="84cb4ab7-3ae5-4437-b942-2573ac30f5c3">
     <name>ФормаДокумента</name>
     <synonym>
       <key>ru</key>
@@ -116,17 +153,26 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <tabularSections uuid="91f45e08-2b44-4a89-a5af-465abc7f92ce">
-    <producedTypes>
-      <objectType typeId="4a8401c8-2ba7-4816-84fa-f48fa89460d7" valueTypeId="b9d087e6-fb69-4024-8213-217101111a6a"/>
-      <rowType typeId="f620acf1-5b10-4c87-9960-45c454a5af50" valueTypeId="f7f21800-8962-4590-8e07-8c1ba68bfb99"/>
-    </producedTypes>
-    <name>ДополнительныеНачисления</name>
+  <forms uuid="8db0c98b-b1f1-42ec-802d-b4f08552bdf8">
+    <name>ФормаДокумента1</name>
     <synonym>
       <key>ru</key>
-      <value>Дополнительные начисления</value>
+      <value>Форма документа1</value>
     </synonym>
-    <attributes uuid="30d1e772-0848-453d-98d2-5ac91d090644">
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <tabularSections uuid="fbf9a033-7f5f-4903-9d8b-5acb5aa533cc">
+    <producedTypes>
+      <objectType typeId="e37fe5f5-066b-4dda-b571-0d783f34bdbd" valueTypeId="23cdd1c9-2e83-40ae-a448-de7caa42b34f"/>
+      <rowType typeId="84d703a5-a260-4b9e-9669-28df8eb40224" valueTypeId="99115676-2a12-4715-9c0a-b1f7d0c329ea"/>
+    </producedTypes>
+    <name>Начисления</name>
+    <synonym>
+      <key>ru</key>
+      <value>Начисления</value>
+    </synonym>
+    <attributes uuid="caaac3cc-2516-40d7-aecf-fd9b6e032e5e">
       <name>ФизическоеЛицо</name>
       <synonym>
         <key>ru</key>
@@ -140,7 +186,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="92302dbe-8788-4f16-9231-d2d5241ff766">
+    <attributes uuid="b642a126-981a-491e-b6e3-9ade34b4d386">
       <name>Подразделение</name>
       <synonym>
         <key>ru</key>
@@ -154,7 +200,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="95b5f56e-3b3f-4827-b7c9-d869e72b90c4">
+    <attributes uuid="7953964d-000e-4fdb-acbd-f4fa25f0bf53">
       <name>Должность</name>
       <synonym>
         <key>ru</key>
@@ -168,21 +214,51 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="4799c5a8-9b72-4f20-a987-2c49c082a214">
+    <attributes uuid="be0b5d39-d1a5-4617-a524-c520e1bcf6a7">
       <name>ВидРасчета</name>
       <synonym>
         <key>ru</key>
         <value>Вид расчета</value>
       </synonym>
       <type>
-        <types>ChartOfCalculationTypesRef.ДополнительныеНачисления</types>
+        <types>ChartOfCalculationTypesRef.Начисления</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>
       <maxValue xsi:type="core:UndefinedValue"/>
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="7bb4eb1f-bfc9-4b3d-aa0d-3bc3c94aee84">
+    <attributes uuid="2a7dc22e-ac6c-400f-aed2-8f3db0591299">
+      <name>ПериодДействияНачало</name>
+      <synonym>
+        <key>ru</key>
+        <value>Период действия начало</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="31dbc8b4-c3b0-4f44-a19f-6b1aab3d1631">
+      <name>ПериодДействияКонец</name>
+      <synonym>
+        <key>ru</key>
+        <value>Период действия конец</value>
+      </synonym>
+      <type>
+        <types>Date</types>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="87556012-594b-47e3-b2f9-ddfb1e453884">
       <name>БазовыйПериодНачало</name>
       <synonym>
         <key>ru</key>
@@ -197,7 +273,7 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="7ad8bb45-ff0f-4680-9237-21b9a47f8bb9">
+    <attributes uuid="b7c785a3-6082-4db6-9d77-2bafd606cca3">
       <name>БазовыйПериодКонец</name>
       <synonym>
         <key>ru</key>
@@ -212,7 +288,21 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="019641d9-a25a-4a61-a4f0-eb860a19759e">
+    <attributes uuid="205d2faa-d8f3-4f1d-869e-eff044e3d1ee">
+      <name>Показатель</name>
+      <synonym>
+        <key>ru</key>
+        <value>Показатель</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="974488e2-4112-4561-8c22-cb3917198205">
       <name>Размер</name>
       <synonym>
         <key>ru</key>
@@ -226,7 +316,21 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="bb66bb34-b380-4229-ad97-04cd0749c670">
+    <attributes uuid="599208f1-78c4-4bb2-8d81-029673ef9306">
+      <name>ГрафикРаботы</name>
+      <synonym>
+        <key>ru</key>
+        <value>График работы</value>
+      </synonym>
+      <type>
+        <types>CatalogRef.ВидыГрафиковРаботы</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="0f0a91c6-b1ed-46a8-bef2-9d3e534db807">
       <name>Результат</name>
       <synonym>
         <key>ru</key>
@@ -240,7 +344,21 @@
       <dataHistory>Use</dataHistory>
       <fullTextSearch>Use</fullTextSearch>
     </attributes>
-    <attributes uuid="8d71de66-5341-41fa-9f4d-0290267b4941">
+    <attributes uuid="a51e1247-8c44-40e3-8d74-d235ab1ca922">
+      <name>ОтработаноДней</name>
+      <synonym>
+        <key>ru</key>
+        <value>Отработано дней</value>
+      </synonym>
+      <type>
+        <types>DefinedType.КоличествоВремени</types>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="c4d6a717-04e1-4835-a9f1-d20c93baa644">
       <name>Сторно</name>
       <synonym>
         <key>ru</key>

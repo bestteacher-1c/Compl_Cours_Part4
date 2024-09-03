@@ -505,6 +505,7 @@
           <source>РабочаяНеделяСостояниеПросмотра</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
+            <horizontalLocation>Left</horizontalLocation>
           </extInfo>
         </viewStatusAddition>
         <searchControlAddition>
@@ -924,6 +925,7 @@
           <source>ВременнаяСхемаСостояниеПросмотра</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
+            <horizontalLocation>Left</horizontalLocation>
           </extInfo>
         </viewStatusAddition>
         <searchControlAddition>
@@ -1289,6 +1291,7 @@
             <source>ВыходныеСостояниеПросмотра</source>
             <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
               <autoMaxWidth>true</autoMaxWidth>
+              <horizontalLocation>Left</horizontalLocation>
             </extInfo>
           </viewStatusAddition>
           <searchControlAddition>

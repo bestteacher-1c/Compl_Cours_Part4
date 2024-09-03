@@ -6,10 +6,10 @@
     <value>Заполнение нового документа</value>
   </synonym>
   <source>
-    <types>DocumentObject.БольничныйЛист</types>
     <types>DocumentObject.НачислениеЗарплаты</types>
     <types>DocumentObject.ПремияРуководителюПодразделения</types>
+    <types>DocumentObject.БольничныйЛист</types>
   </source>
   <event>Filling</event>
-  <handler>CommonModule.Серверный.ЗаполнениеНовогоДокументаОбработкаЗаполнения</handler>
+  <handler>CommonModule.ОбщийМодульСервер.ЗаполнениеНовогоДокументаОбработкаЗаполнения</handler>
 </mdclass:EventSubscription>

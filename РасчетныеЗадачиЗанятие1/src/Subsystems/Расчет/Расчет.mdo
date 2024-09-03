@@ -11,6 +11,7 @@
     <picture>CommonPicture.Документы</picture>
   </picture>
   <content>DataProcessor.ИнструментыРазработчикаКонсольЗапросов</content>
+  <content>Catalog.ПоказателиРасчетаЗарплаты</content>
   <subsystems>Документы</subsystems>
   <subsystems>ПланыВидовРасчета</subsystems>
   <subsystems>Справочники</subsystems>

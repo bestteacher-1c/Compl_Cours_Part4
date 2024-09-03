@@ -33,30 +33,9 @@
   <defaultObjectForm>ChartOfCalculationTypes.Удержания.Form.ФормаВидаРасчета</defaultObjectForm>
   <defaultListForm>ChartOfCalculationTypes.Удержания.Form.ФормаСписка</defaultListForm>
   <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
-  <baseCalculationTypes>ChartOfCalculationTypes.ОсновныеНачисления</baseCalculationTypes>
+  <baseCalculationTypes>ChartOfCalculationTypes.Начисления</baseCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</baseCalculationTypes>
-  <predefined>
-    <items id="639dde45-6d38-4a1d-b9e2-52470ceb31a5">
-      <name>УдержаниеПроцентом</name>
-      <description>Удержание процентом</description>
-      <code xsi:type="core:StringValue">
-        <value>00002</value>
-      </code>
-      <base>ChartOfCalculationTypes.ОсновныеНачисления.ОкладПоДням</base>
-      <base>ChartOfCalculationTypes.ДополнительныеНачисления.ПремияПроцентом</base>
-      <leading>ChartOfCalculationTypes.ОсновныеНачисления.Больничный</leading>
-      <leading>ChartOfCalculationTypes.ОсновныеНачисления.ОкладПоДням</leading>
-      <leading>ChartOfCalculationTypes.ДополнительныеНачисления.ПремияПроцентом</leading>
-      <leading>ChartOfCalculationTypes.ДополнительныеНачисления.ПремияСуммой</leading>
-    </items>
-    <items id="6755c53e-fcc5-4bcd-ac1f-7b4f692fd1ad">
-      <name>УдержаниеСуммой</name>
-      <description>Удержание суммой</description>
-      <code xsi:type="core:StringValue">
-        <value>00001</value>
-      </code>
-    </items>
-  </predefined>
+  <predefined/>
   <attributes uuid="47aa4bbe-9832-49bb-91de-79c262dd9668">
     <name>СпособРасчета</name>
     <synonym>
@@ -87,7 +66,41 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="4aafbc0b-a345-417b-84d9-6b7176482cfc">
+  <attributes uuid="6266ca1d-001d-4f7f-8e51-254ec4edc206">
+    <name>Показатель</name>
+    <synonym>
+      <key>ru</key>
+      <value>Показатель</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ПоказателиРасчетаЗарплаты</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="6fa03e4b-843c-4a7d-b962-c9d7593917f1">
+    <name>Формула</name>
+    <synonym>
+      <key>ru</key>
+      <value>Формула</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="f0c658ed-34de-43d4-8107-6c220fe49b40">
     <name>ФормаВидаРасчета</name>
     <synonym>
       <key>ru</key>
@@ -96,7 +109,7 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="1c9ebfb0-d3a8-4956-bc4a-211dc5e85364">
+  <forms uuid="5dc04292-e1da-40aa-ac63-e107e84c8626">
     <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>
