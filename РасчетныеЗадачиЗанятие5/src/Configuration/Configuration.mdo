@@ -55,7 +55,6 @@
   <definedTypes>DefinedType.ПоложительноеЧисло</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСумма</definedTypes>
   <definedTypes>DefinedType.КоличествоВремени</definedTypes>
-  <constants>Constant.ТекущийПериод</constants>
   <constants>Constant.Активация</constants>
   <catalogs>Catalog.ФизическиеЛица</catalogs>
   <catalogs>Catalog.Подразделения</catalogs>
