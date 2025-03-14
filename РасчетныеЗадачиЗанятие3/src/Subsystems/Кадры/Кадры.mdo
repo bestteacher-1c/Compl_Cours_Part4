@@ -10,6 +10,8 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.Справочники</picture>
   </picture>
+  <content>InformationRegister.ПлановыеНачисления</content>
+  <content>InformationRegister.ПлановыеУдержания</content>
   <subsystems>Документы</subsystems>
   <subsystems>Справочники</subsystems>
 </mdclass:Subsystem>

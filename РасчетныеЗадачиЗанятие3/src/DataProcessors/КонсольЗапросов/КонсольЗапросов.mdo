@@ -9,6 +9,7 @@
     <key>ru</key>
     <value>Консоль запросов</value>
   </synonym>
+  <comment>Консоль</comment>
   <useStandardCommands>true</useStandardCommands>
   <defaultForm>DataProcessor.КонсольЗапросов.Form.Форма</defaultForm>
   <help>

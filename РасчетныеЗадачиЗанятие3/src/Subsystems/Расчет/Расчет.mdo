@@ -12,7 +12,6 @@
   </picture>
   <content>DataProcessor.ИнструментыРазработчикаКонсольЗапросов</content>
   <content>CalculationRegister.Начисления</content>
-  <content>CalculationRegister.ДополнительныеНачисления</content>
   <content>CalculationRegister.Удержания</content>
   <subsystems>Документы</subsystems>
   <subsystems>ПланыВидовРасчета</subsystems>
