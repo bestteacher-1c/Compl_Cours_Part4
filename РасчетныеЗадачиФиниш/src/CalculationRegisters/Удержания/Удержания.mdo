@@ -119,7 +119,6 @@
       </synonym>
       <registerDimension>CalculationRegister.Удержания.Dimension.ФизическоеЛицо</registerDimension>
       <leadingRegisterData>CalculationRegister.Начисления.Dimension.ФизическоеЛицо</leadingRegisterData>
-      <leadingRegisterData>CalculationRegister.ДополнительныеНачисления.Dimension.ФизическоеЛицо</leadingRegisterData>
     </dimensions>
   </recalculations>
   <forms uuid="bd0e1e24-2435-4c96-b2a0-5eb3f1218921">

@@ -396,7 +396,7 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <source>БазовыеВидыРасчетаСтрокаПоиска</source>
+          <source>БазовыеВидыРасчета</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -435,7 +435,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
-          <source>БазовыеВидыРасчетаСостояниеПросмотра</source>
+          <source>БазовыеВидыРасчета</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <horizontalLocation>Left</horizontalLocation>
@@ -475,7 +475,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
-          <source>БазовыеВидыРасчетаУправлениеПоиском</source>
+          <source>БазовыеВидыРасчета</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -696,7 +696,7 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <source>ВедущиеВидыРасчетаСтрокаПоиска</source>
+          <source>ВедущиеВидыРасчета</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -735,7 +735,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
-          <source>ВедущиеВидыРасчетаСостояниеПросмотра</source>
+          <source>ВедущиеВидыРасчета</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <horizontalLocation>Left</horizontalLocation>
@@ -775,7 +775,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
-          <source>ВедущиеВидыРасчетаУправлениеПоиском</source>
+          <source>ВедущиеВидыРасчета</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -1121,7 +1121,7 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <source>СписокПоказателейСтрокаПоиска</source>
+          <source>СписокПоказателей</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -1160,7 +1160,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
-          <source>СписокПоказателейСостояниеПросмотра</source>
+          <source>СписокПоказателей</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -1199,7 +1199,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
-          <source>СписокПоказателейУправлениеПоиском</source>
+          <source>СписокПоказателей</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>

@@ -34,7 +34,6 @@
   <defaultListForm>ChartOfCalculationTypes.Удержания.Form.ФормаСписка</defaultListForm>
   <dependenceOnCalculationTypes>OnRegistrationPeriod</dependenceOnCalculationTypes>
   <baseCalculationTypes>ChartOfCalculationTypes.Начисления</baseCalculationTypes>
-  <baseCalculationTypes>ChartOfCalculationTypes.ДополнительныеНачисления</baseCalculationTypes>
   <attributes uuid="47aa4bbe-9832-49bb-91de-79c262dd9668">
     <name>СпособРасчета</name>
     <synonym>
