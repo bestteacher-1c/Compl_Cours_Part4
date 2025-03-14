@@ -301,7 +301,7 @@
         </userVisible>
         <autoFill>true</autoFill>
       </contextMenu>
-      <source>СписокЗаписейТребующихПерерасчетаСтрокаПоиска</source>
+      <source>СписокЗаписейТребующихПерерасчета</source>
       <extInfo xsi:type="form:SearchStringAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -340,7 +340,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>ViewStatusAddition</type>
-      <source>СписокЗаписейТребующихПерерасчетаСостояниеПросмотра</source>
+      <source>СписокЗаписейТребующихПерерасчета</source>
       <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
         <horizontalLocation>Left</horizontalLocation>
@@ -380,7 +380,7 @@
         <autoFill>true</autoFill>
       </contextMenu>
       <type>SearchControlAddition</type>
-      <source>СписокЗаписейТребующихПерерасчетаУправлениеПоиском</source>
+      <source>СписокЗаписейТребующихПерерасчета</source>
       <extInfo xsi:type="form:SearchControlAdditionExtInfo">
         <autoMaxWidth>true</autoMaxWidth>
       </extInfo>
@@ -438,7 +438,6 @@
     <items xsi:type="form:Button">
       <name>ФормаПерерасчитать</name>
       <id>35</id>
-      <visible>true</visible>
       <enabled>true</enabled>
       <userVisible>
         <common>true</common>

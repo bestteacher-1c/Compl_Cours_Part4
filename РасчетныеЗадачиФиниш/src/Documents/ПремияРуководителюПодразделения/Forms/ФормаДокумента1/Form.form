@@ -1594,7 +1594,7 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <source>НачисленияСтрокаПоиска</source>
+          <source>Начисления</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -1633,7 +1633,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
-          <source>НачисленияСостояниеПросмотра</source>
+          <source>Начисления</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -1672,7 +1672,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
-          <source>НачисленияУправлениеПоиском</source>
+          <source>Начисления</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -1886,7 +1886,7 @@
         </userVisible>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
-        <command>CalculationRegister.ДополнительныеНачисления.StandardCommand.OpenByRecorder</command>
+        <command>0</command>
         <group>FormNavigationPanelImportant</group>
         <index>0</index>
         <userVisible>

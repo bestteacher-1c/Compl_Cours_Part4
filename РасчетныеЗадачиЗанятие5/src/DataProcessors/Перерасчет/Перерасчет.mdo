@@ -44,7 +44,6 @@
       </synonym>
       <type>
         <types>ChartOfCalculationTypesRef.Начисления</types>
-        <types>ChartOfCalculationTypesRef.ДополнительныеНачисления</types>
         <types>ChartOfCalculationTypesRef.Удержания</types>
       </type>
       <minValue xsi:type="core:UndefinedValue"/>

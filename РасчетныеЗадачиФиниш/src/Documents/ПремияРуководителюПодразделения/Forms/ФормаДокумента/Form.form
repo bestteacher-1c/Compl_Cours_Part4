@@ -576,7 +576,7 @@
         </userVisible>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
-        <command>CalculationRegister.ДополнительныеНачисления.StandardCommand.OpenByRecorder</command>
+        <command>0</command>
         <group>FormNavigationPanelImportant</group>
         <index>0</index>
         <userVisible>
