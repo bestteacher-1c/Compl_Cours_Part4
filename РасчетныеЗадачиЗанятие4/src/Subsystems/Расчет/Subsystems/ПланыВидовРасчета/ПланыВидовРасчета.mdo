@@ -8,7 +8,6 @@
   <includeHelpInContents>true</includeHelpInContents>
   <includeInCommandInterface>true</includeInCommandInterface>
   <content>ChartOfCalculationTypes.Начисления</content>
-  <content>ChartOfCalculationTypes.ДополнительныеНачисления</content>
   <content>ChartOfCalculationTypes.Удержания</content>
   <parentSubsystem>Subsystem.Расчет</parentSubsystem>
 </mdclass:Subsystem>

@@ -12,25 +12,11 @@
   </synonym>
   <quickChoice>true</quickChoice>
   <choiceMode>QuickChoice</choiceMode>
-  <enumValues uuid="39ee152c-3c93-4135-82d8-1fc58e456062">
-    <name>ФиксированнойСуммой</name>
+  <enumValues uuid="ccdb9c56-64bf-4294-b20b-63fd9e833bcc">
+    <name>ПоФормуле</name>
     <synonym>
       <key>ru</key>
-      <value>Фиксированной суммой</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="040bb910-4741-40e8-975c-b908d2be6495">
-    <name>Процентом</name>
-    <synonym>
-      <key>ru</key>
-      <value>Процентом</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="28bf5e7e-ff90-4d7e-a19a-99e0ba370dda">
-    <name>ПоМесячнойТарифнойСтавкеПоДням</name>
-    <synonym>
-      <key>ru</key>
-      <value>По месячной тарифной ставке по дням</value>
+      <value>По формуле</value>
     </synonym>
   </enumValues>
   <enumValues uuid="814fa78d-416e-44e3-8f34-056529577073">
@@ -45,20 +31,6 @@
     <synonym>
       <key>ru</key>
       <value>Нулевая сумма</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="ccdb9c56-64bf-4294-b20b-63fd9e833bcc">
-    <name>ПоФормуле</name>
-    <synonym>
-      <key>ru</key>
-      <value>По формуле</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="e4a6143c-43fc-4e56-898f-85e2a380b37f">
-    <name>КомпенсацияЗаДень</name>
-    <synonym>
-      <key>ru</key>
-      <value>Компенсация за день</value>
     </synonym>
   </enumValues>
   <enumValues uuid="9e52385b-9008-4838-8753-ad7cc19b6b30">

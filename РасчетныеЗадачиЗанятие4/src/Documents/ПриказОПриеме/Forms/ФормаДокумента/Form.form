@@ -645,7 +645,7 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <source>НачисленияСтрокаПоиска</source>
+          <source>Начисления</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -684,7 +684,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
-          <source>НачисленияСостояниеПросмотра</source>
+          <source>Начисления</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <horizontalLocation>Left</horizontalLocation>
@@ -724,7 +724,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
-          <source>НачисленияУправлениеПоиском</source>
+          <source>Начисления</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -1069,7 +1069,7 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <source>УдержанияСтрокаПоиска</source>
+          <source>Удержания</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -1108,7 +1108,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
-          <source>УдержанияСостояниеПросмотра</source>
+          <source>Удержания</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <horizontalLocation>Left</horizontalLocation>
@@ -1148,7 +1148,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
-          <source>УдержанияУправлениеПоиском</source>
+          <source>Удержания</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -1244,9 +1244,6 @@
         <userVisible>
           <common>true</common>
         </userVisible>
-        <dataPath xsi:type="form:DataPath">
-          <segments>Объект.ДополнительныеНачисления</segments>
-        </dataPath>
         <titleLocation>None</titleLocation>
         <items xsi:type="form:FormField">
           <name>ДополнительныеНачисленияНомерСтроки</name>
@@ -1256,9 +1253,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ДополнительныеНачисления.LineNumber</segments>
-          </dataPath>
           <extendedTooltip>
             <name>ДополнительныеНачисленияНомерСтрокиРасширеннаяПодсказка</name>
             <id>79</id>
@@ -1284,14 +1278,18 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <type>LabelField</type>
+          <type>InputField</type>
           <editMode>EnterOnInput</editMode>
           <showInHeader>true</showInHeader>
           <headerHorizontalAlign>Left</headerHorizontalAlign>
           <showInFooter>true</showInFooter>
-          <extInfo xsi:type="form:LabelFieldExtInfo">
+          <extInfo xsi:type="form:InputFieldExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <autoMaxHeight>true</autoMaxHeight>
+            <wrap>true</wrap>
+            <chooseType>true</chooseType>
+            <typeDomainEnabled>true</typeDomainEnabled>
+            <textEdit>true</textEdit>
           </extInfo>
         </items>
         <items xsi:type="form:FormField">
@@ -1302,9 +1300,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ДополнительныеНачисления.ВидРасчета</segments>
-          </dataPath>
           <extendedTooltip>
             <name>ДополнительныеНачисленияВидРасчетаРасширеннаяПодсказка</name>
             <id>80</id>
@@ -1352,9 +1347,6 @@
           <userVisible>
             <common>true</common>
           </userVisible>
-          <dataPath xsi:type="form:DataPath">
-            <segments>Объект.ДополнительныеНачисления.Размер</segments>
-          </dataPath>
           <extendedTooltip>
             <name>ДополнительныеНачисленияРазмерРасширеннаяПодсказка</name>
             <id>81</id>
@@ -1438,7 +1430,7 @@
             </userVisible>
             <autoFill>true</autoFill>
           </contextMenu>
-          <source>ДополнительныеНачисленияСтрокаПоиска</source>
+          <source>ДополнительныеНачисления</source>
           <extInfo xsi:type="form:SearchStringAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -1477,7 +1469,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>ViewStatusAddition</type>
-          <source>ДополнительныеНачисленияСостояниеПросмотра</source>
+          <source>ДополнительныеНачисления</source>
           <extInfo xsi:type="form:ViewStatusAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
             <horizontalLocation>Left</horizontalLocation>
@@ -1517,7 +1509,7 @@
             <autoFill>true</autoFill>
           </contextMenu>
           <type>SearchControlAddition</type>
-          <source>ДополнительныеНачисленияУправлениеПоиском</source>
+          <source>ДополнительныеНачисления</source>
           <extInfo xsi:type="form:SearchControlAdditionExtInfo">
             <autoMaxWidth>true</autoMaxWidth>
           </extInfo>
@@ -1673,7 +1665,7 @@
   <commandInterface>
     <navigationPanel>
       <cmiFragmentRecord>
-        <command>InformationRegister.ПлановыеДополнительныеНачисления.StandardCommand.OpenByRecorder</command>
+        <command>0</command>
         <userVisible>
           <common>true</common>
         </userVisible>

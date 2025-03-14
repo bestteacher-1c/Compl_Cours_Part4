@@ -10,7 +10,6 @@
   <picture xsi:type="core:PictureRef">
     <picture>CommonPicture.Документы</picture>
   </picture>
-  <content>DataProcessor.ИнструментыРазработчикаКонсольЗапросов</content>
   <subsystems>Документы</subsystems>
   <subsystems>ПланыВидовРасчета</subsystems>
   <subsystems>Справочники</subsystems>
