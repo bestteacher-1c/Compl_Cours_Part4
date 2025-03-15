@@ -57,6 +57,13 @@
         <value>000000004</value>
       </code>
     </items>
+    <items id="3ac37c26-3d6c-4bee-92f2-88d203660a80">
+      <name>ПроцентВыплатыПоБолничномуЛисту</name>
+      <description>Процент выплаты по болничному листу</description>
+      <code xsi:type="core:StringValue">
+        <value>000000008</value>
+      </code>
+    </items>
   </predefined>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
