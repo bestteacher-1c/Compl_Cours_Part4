@@ -1718,7 +1718,7 @@
         </userVisible>
       </cmiFragmentRecord>
       <cmiFragmentRecord>
-        <command>InformationRegister.Сотрудники.StandardCommand.OpenByRecorder</command>
+        <command>InformationRegister.СостояниеСотрудников.StandardCommand.OpenByRecorder</command>
         <userVisible>
           <common>true</common>
         </userVisible>

@@ -25,7 +25,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <realTimePosting>Deny</realTimePosting>
-  <registerRecords>InformationRegister.Сотрудники</registerRecords>
+  <registerRecords>InformationRegister.СостояниеСотрудников</registerRecords>
   <attributes uuid="fee19ec6-5df2-4ec5-a32c-3c06988de361">
     <name>ФизическоеЛицо</name>
     <synonym>

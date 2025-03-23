@@ -9,10 +9,6 @@
       <command>Document.НачислениеЗарплаты.StandardCommand.OpenList</command>
       <visible/>
     </visibilityFragments>
-    <visibilityFragments>
-      <command>DataProcessor.ИнструментыРазработчикаКонсольЗапросов.StandardCommand.Open</command>
-      <visible/>
-    </visibilityFragments>
   </commandsVisibility>
   <commandsPlacement>
     <placementFragments>
@@ -22,7 +18,6 @@
     </placementFragments>
     <placementFragments>
       <group>ActionsPanelTools</group>
-      <commands>DataProcessor.ИнструментыРазработчикаКонсольЗапросов.StandardCommand.Open</commands>
       <commands>DataProcessor.КонсольЗапросов.StandardCommand.Open</commands>
     </placementFragments>
   </commandsPlacement>

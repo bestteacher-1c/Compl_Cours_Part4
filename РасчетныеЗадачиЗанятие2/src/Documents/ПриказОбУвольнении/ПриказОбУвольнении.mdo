@@ -26,7 +26,7 @@
   <autonumbering>true</autonumbering>
   <defaultObjectForm>Document.ПриказОбУвольнении.Form.ФормаДокумента</defaultObjectForm>
   <realTimePosting>Deny</realTimePosting>
-  <registerRecords>InformationRegister.Сотрудники</registerRecords>
+  <registerRecords>InformationRegister.СостояниеСотрудников</registerRecords>
   <attributes uuid="6edb19ca-11dc-4f79-beef-7dec71bab760">
     <name>ПриказОПриеме</name>
     <synonym>

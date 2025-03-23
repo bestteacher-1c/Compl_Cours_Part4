@@ -8,57 +8,22 @@
   <name>СпособыРасчета</name>
   <synonym>
     <key>ru</key>
-    <value>Способы расчета</value>
+    <value>Способы расчета начислений и удержаний</value>
   </synonym>
   <quickChoice>true</quickChoice>
   <choiceMode>QuickChoice</choiceMode>
-  <enumValues uuid="28bf5e7e-ff90-4d7e-a19a-99e0ba370dda">
-    <name>ПоМесячнойТарифнойСтавкеПоДням</name>
+  <enumValues uuid="bf524026-8130-47cd-95a4-9eee3eb2d6f3">
+    <name>ПроизвольнаяФормула</name>
     <synonym>
       <key>ru</key>
-      <value>По месячной тарифной ставке по дням</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="040bb910-4741-40e8-975c-b908d2be6495">
-    <name>Процентом</name>
-    <synonym>
-      <key>ru</key>
-      <value>Процентом</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="39ee152c-3c93-4135-82d8-1fc58e456062">
-    <name>ФиксированнойСуммой</name>
-    <synonym>
-      <key>ru</key>
-      <value>Фиксированной суммой</value>
+      <value>Произвольная формула</value>
     </synonym>
   </enumValues>
   <enumValues uuid="814fa78d-416e-44e3-8f34-056529577073">
-    <name>ПоСреднемуЗаработку</name>
+    <name>ОплатаБольничного</name>
     <synonym>
       <key>ru</key>
-      <value>По среднему заработку</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="640280ad-ce6b-4a38-a5a6-e3e61dfc5419">
-    <name>НулеваяСумма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Нулевая сумма</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="bf524026-8130-47cd-95a4-9eee3eb2d6f3">
-    <name>ПоФормуле</name>
-    <synonym>
-      <key>ru</key>
-      <value>По формуле</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="35212c0c-7d12-45fe-9a31-2ba7b5fe5812">
-    <name>КомпенсацияЗаДень</name>
-    <synonym>
-      <key>ru</key>
-      <value>Компенсация за день</value>
+      <value>Оплата больничного</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>

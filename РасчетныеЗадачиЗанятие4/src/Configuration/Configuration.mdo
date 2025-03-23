@@ -73,7 +73,7 @@
   <enums>Enum.СпособыРасчета</enums>
   <enums>Enum.ПроцентыВыплатыБольничного</enums>
   <dataProcessors>DataProcessor.КонсольЗапросов</dataProcessors>
-  <informationRegisters>InformationRegister.Сотрудники</informationRegisters>
+  <informationRegisters>InformationRegister.СостояниеСотрудников</informationRegisters>
   <informationRegisters>InformationRegister.ГрафикиРаботы</informationRegisters>
   <informationRegisters>InformationRegister.ПлановыеНачисления</informationRegisters>
   <informationRegisters>InformationRegister.ПлановыеУдержания</informationRegisters>

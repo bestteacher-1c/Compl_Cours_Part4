@@ -8,7 +8,7 @@
       </visible>
     </visibilityFragments>
     <visibilityFragments>
-      <command>InformationRegister.Сотрудники.StandardCommand.OpenList</command>
+      <command>InformationRegister.СостояниеСотрудников.StandardCommand.OpenList</command>
       <visible>
         <common>true</common>
       </visible>
@@ -21,7 +21,7 @@
     </placementFragments>
     <placementFragments>
       <group>NavigationPanelSeeAlso</group>
-      <commands>InformationRegister.Сотрудники.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.СостояниеСотрудников.StandardCommand.OpenList</commands>
     </placementFragments>
   </commandsPlacement>
   <commandsOrder>
@@ -38,7 +38,7 @@
     </orderFragments>
     <orderFragments>
       <group>NavigationPanelSeeAlso</group>
-      <commands>InformationRegister.Сотрудники.StandardCommand.OpenList</commands>
+      <commands>InformationRegister.СостояниеСотрудников.StandardCommand.OpenList</commands>
     </orderFragments>
   </commandsOrder>
 </cmi:CommandInterface>

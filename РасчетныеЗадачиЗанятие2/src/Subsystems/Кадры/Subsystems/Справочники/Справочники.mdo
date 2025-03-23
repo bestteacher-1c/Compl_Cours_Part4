@@ -12,6 +12,6 @@
   <content>Catalog.Должности</content>
   <content>Catalog.ВидыГрафиковРабот</content>
   <content>InformationRegister.ГрафикиРаботы</content>
-  <content>InformationRegister.Сотрудники</content>
+  <content>InformationRegister.СостояниеСотрудников</content>
   <parentSubsystem>Subsystem.Кадры</parentSubsystem>
 </mdclass:Subsystem>

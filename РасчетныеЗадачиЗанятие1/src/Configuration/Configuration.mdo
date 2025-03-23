@@ -66,6 +66,6 @@
   <enums>Enum.СостоянияФизическогоЛица</enums>
   <dataProcessors>DataProcessor.ИнструментыРазработчикаКонсольЗапросов</dataProcessors>
   <dataProcessors>DataProcessor.КонсольЗапросов</dataProcessors>
-  <informationRegisters>InformationRegister.Сотрудники</informationRegisters>
+  <informationRegisters>InformationRegister.СостояниеСотрудников</informationRegisters>
   <informationRegisters>InformationRegister.ГрафикиРаботы</informationRegisters>
 </mdclass:Configuration>

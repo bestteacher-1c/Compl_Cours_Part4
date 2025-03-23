@@ -67,7 +67,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <realTimePosting>Deny</realTimePosting>
-  <registerRecords>InformationRegister.Сотрудники</registerRecords>
+  <registerRecords>InformationRegister.СостояниеСотрудников</registerRecords>
   <attributes uuid="dece2e31-f7e1-4307-bea4-04d77d36310d">
     <name>ДокументОснование</name>
     <synonym>

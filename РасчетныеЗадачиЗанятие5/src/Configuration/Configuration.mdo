@@ -78,7 +78,7 @@
   <dataProcessors>DataProcessor.КонсольЗапросов</dataProcessors>
   <dataProcessors>DataProcessor.ГрафическоеПредставлениеОсновныхНачислений</dataProcessors>
   <dataProcessors>DataProcessor.Перерасчет</dataProcessors>
-  <informationRegisters>InformationRegister.Сотрудники</informationRegisters>
+  <informationRegisters>InformationRegister.СостояниеСотрудников</informationRegisters>
   <informationRegisters>InformationRegister.ГрафикиРаботы</informationRegisters>
   <informationRegisters>InformationRegister.ПлановыеНачисления</informationRegisters>
   <informationRegisters>InformationRegister.ПлановыеУдержания</informationRegisters>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5b75b77b-4672-4ee5-aa5a-41f124dd4705">
-  <name>ФоновыйПроцесс</name>
-  <synonym>
-    <key>ru</key>
-    <value>Фоновый процесс</value>
-  </synonym>
-</mdclass:CommonPicture>

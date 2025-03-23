@@ -69,7 +69,7 @@
   <defaultObjectForm>Document.КадровоеИзменение.Form.ФормаДокумента</defaultObjectForm>
   <realTimePosting>Deny</realTimePosting>
   <registerRecords>InformationRegister.ПлановыеНачисления</registerRecords>
-  <registerRecords>InformationRegister.Сотрудники</registerRecords>
+  <registerRecords>InformationRegister.СостояниеСотрудников</registerRecords>
   <registerRecords>InformationRegister.ПлановыеУдержания</registerRecords>
   <attributes uuid="d0735c27-782d-4cea-9ded-f1e28090f640">
     <name>ДокументОснование</name>
