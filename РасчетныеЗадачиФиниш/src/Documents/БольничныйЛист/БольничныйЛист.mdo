@@ -67,6 +67,7 @@
   <realTimePosting>Deny</realTimePosting>
   <registerRecords>AccumulationRegister.ВзаиморасчетыСРаботниками</registerRecords>
   <registerRecords>CalculationRegister.Начисления</registerRecords>
+  <registerRecords>InformationRegister.СостояниеСотрудников</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="255d0ba0-9b30-49ef-a590-f222d03639d2">
@@ -213,7 +214,7 @@
     <choiceParameters>
       <name>Отбор.СпособРасчета</name>
       <value xsi:type="core:ReferenceValue">
-        <value>Enum.СпособыРасчета.EnumValue.ПоСреднемуЗаработку</value>
+        <value>Enum.СпособыРасчета.EnumValue.ОплатаБольничного</value>
       </value>
     </choiceParameters>
     <fillValue xsi:type="core:UndefinedValue"/>

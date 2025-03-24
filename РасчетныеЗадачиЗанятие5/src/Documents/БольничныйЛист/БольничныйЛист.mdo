@@ -66,6 +66,7 @@
   <defaultObjectForm>Document.БольничныйЛист.Form.ФормаДокумента</defaultObjectForm>
   <realTimePosting>Deny</realTimePosting>
   <registerRecords>AccumulationRegister.ВзаиморасчетыСРаботниками</registerRecords>
+  <registerRecords>InformationRegister.СостояниеСотрудников</registerRecords>
   <registerRecords>CalculationRegister.Начисления</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
@@ -213,7 +214,7 @@
     <choiceParameters>
       <name>Отбор.СпособРасчета</name>
       <value xsi:type="core:ReferenceValue">
-        <value>Enum.СпособыРасчета.EnumValue.ПоСреднемуЗаработку</value>
+        <value>Enum.СпособыРасчета.EnumValue.ОплатаБольничного</value>
       </value>
     </choiceParameters>
     <fillValue xsi:type="core:UndefinedValue"/>

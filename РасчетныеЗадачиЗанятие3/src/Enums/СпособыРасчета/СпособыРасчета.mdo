@@ -13,24 +13,17 @@
   <quickChoice>true</quickChoice>
   <choiceMode>QuickChoice</choiceMode>
   <enumValues uuid="bcb9411d-ebc1-4d2b-b660-c825522258f4">
-    <name>ПоФормуле</name>
+    <name>ПроизвольнаяФормула</name>
     <synonym>
       <key>ru</key>
-      <value>По формуле</value>
+      <value>Произвольная формула</value>
     </synonym>
   </enumValues>
   <enumValues uuid="814fa78d-416e-44e3-8f34-056529577073">
-    <name>ПоСреднемуЗаработку</name>
+    <name>ОплатаБольничного</name>
     <synonym>
       <key>ru</key>
-      <value>По среднему заработку (больничный лист)</value>
-    </synonym>
-  </enumValues>
-  <enumValues uuid="8eca06f1-95ba-45cd-8563-7d34b3d39f67">
-    <name>НулеваяСумма</name>
-    <synonym>
-      <key>ru</key>
-      <value>Нулевая сумма</value>
+      <value>Оплата больничного</value>
     </synonym>
   </enumValues>
 </mdclass:Enum>
