@@ -98,7 +98,7 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="d4960c54-e000-408a-91ea-2dd21aef7f20">
+  <forms uuid="ef711de3-6e04-4a8d-90c1-f45b859e3eb2">
     <name>ФормаВидаРасчета</name>
     <synonym>
       <key>ru</key>
@@ -107,7 +107,7 @@
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
   </forms>
-  <forms uuid="a9e79182-ba35-4c40-900b-7643819dd383">
+  <forms uuid="7000287e-581c-4511-96e7-f8dda6eb2539">
     <name>ФормаСписка</name>
     <synonym>
       <key>ru</key>

@@ -12,12 +12,13 @@
     <placementFragments>
       <group>NavigationPanelImportant</group>
       <commands>InformationRegister.ГрафикиРаботы.StandardCommand.OpenList</commands>
+      <commands>Catalog.ПоказателиРасчетаЗарплаты.StandardCommand.OpenList</commands>
     </placementFragments>
   </commandsPlacement>
   <commandsOrder>
     <orderFragments>
       <group>NavigationPanelImportant</group>
-      <commands>InformationRegister.ГрафикиРаботы.StandardCommand.OpenList</commands>
+      <commands>Catalog.ПоказателиРасчетаЗарплаты.StandardCommand.OpenList</commands>
     </orderFragments>
   </commandsOrder>
 </cmi:CommandInterface>
