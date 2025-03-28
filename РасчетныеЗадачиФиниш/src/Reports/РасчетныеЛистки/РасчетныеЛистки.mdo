@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Report xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="32523000-39a0-4dcc-9a90-739a28f8f2ae">
+  <producedTypes>
+    <objectType typeId="04b1ad2e-ac70-47eb-bbe4-1c68641e6791" valueTypeId="d3c25a6f-6a5a-4fe9-b335-e8e598a8f4a5"/>
+    <managerType typeId="a388892b-4c44-4024-ad86-3999ca43568f" valueTypeId="03bb7143-c186-49b7-ab8e-f385f3c49f54"/>
+  </producedTypes>
+  <name>РасчетныеЛистки</name>
+  <synonym>
+    <key>ru</key>
+    <value>Расчетные листки</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <mainDataCompositionSchema>Report.РасчетныеЛистки.Template.СхемаКомпоновкиДанных</mainDataCompositionSchema>
+  <templates uuid="b88949d2-d2d0-44a8-9405-23a0d0ea86ab">
+    <name>СхемаКомпоновкиДанных</name>
+    <synonym>
+      <key>ru</key>
+      <value>Схема компоновки данных</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+</mdclass:Report>

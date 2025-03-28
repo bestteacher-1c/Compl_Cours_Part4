@@ -32,6 +32,7 @@
       <value>Работник</value>
     </synonym>
     <references>Document.ПремияРуководителюПодразделения.Attribute.ФизическоеЛицо</references>
+    <references>Document.БольничныйЛист.Attribute.ФизическоеЛицо</references>
   </columns>
   <forms uuid="4e7e7369-b1c4-4b24-91a8-deaaa17521ab">
     <name>ФормаСписка</name>
