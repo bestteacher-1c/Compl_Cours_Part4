@@ -102,15 +102,7 @@
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
   <defaultPresentation>AsDescription</defaultPresentation>
-  <predefined>
-    <items id="d7d841a9-aec6-4696-87a3-32a43ea11809">
-      <name>КалендарныеДни</name>
-      <description>Календарные дни</description>
-      <code xsi:type="core:StringValue">
-        <value>00001</value>
-      </code>
-    </items>
-  </predefined>
+  <predefined/>
   <editType>InDialog</editType>
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.ВидыГрафиковРабот.Form.ФормаЭлемента</defaultObjectForm>
