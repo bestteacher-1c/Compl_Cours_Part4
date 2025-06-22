@@ -369,9 +369,6 @@
     <showInFooter>true</showInFooter>
     <extInfo xsi:type="form:LabelFieldExtInfo">
       <autoMaxHeight>true</autoMaxHeight>
-      <border xsi:type="core:BorderDef">
-        <width>1</width>
-      </border>
       <font xsi:type="core:FontRef">
         <font>Style.NormalTextFont</font>
         <bold>true</bold>
