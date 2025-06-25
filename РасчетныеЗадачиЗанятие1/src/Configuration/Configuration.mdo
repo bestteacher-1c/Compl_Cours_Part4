@@ -47,8 +47,6 @@
   <commonPictures>CommonPicture.Документы</commonPictures>
   <commonPictures>CommonPicture.Сервис</commonPictures>
   <commonPictures>CommonPicture.ФоновыйПроцесс</commonPictures>
-  <commonModules>CommonModule.Сервер</commonModules>
-  <eventSubscriptions>EventSubscription.ПроведениеКадровыхДокументов</eventSubscriptions>
   <definedTypes>DefinedType.ПоложительноеЧисло</definedTypes>
   <definedTypes>DefinedType.ДенежнаяСумма</definedTypes>
   <definedTypes>DefinedType.КоличествоВремени</definedTypes>
