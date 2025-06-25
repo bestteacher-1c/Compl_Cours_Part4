@@ -11,5 +11,5 @@
     <types>DocumentObject.ПремияРуководителюПодразделения</types>
   </source>
   <event>Filling</event>
-  <handler>CommonModule.ОбщийМодульСервер.ЗаполнениеНовогоДокументаОбработкаЗаполнения</handler>
+  <handler>CommonModule.ВспомогательныйСервер.ЗаполнениеНовогоДокументаОбработкаЗаполнения</handler>
 </mdclass:EventSubscription>
