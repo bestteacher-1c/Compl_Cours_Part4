@@ -47,7 +47,7 @@
   <commonPictures>CommonPicture.Сервис</commonPictures>
   <commonPictures>CommonPicture.ФоновыйПроцесс</commonPictures>
   <commonModules>CommonModule.Сервис</commonModules>
-  <commonModules>CommonModule.ОбщийМодульРасчетРесурсов</commonModules>
+  <commonModules>CommonModule.РасчетРесурсовСервер</commonModules>
   <commonModules>CommonModule.ОбщийМодульСервер</commonModules>
   <eventSubscriptions>EventSubscription.ПроведениеКадровыхДокументов</eventSubscriptions>
   <definedTypes>DefinedType.ПоложительноеЧисло</definedTypes>
