@@ -22,7 +22,7 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
-  <defaultObjectForm>Document.ПремияРуководителюПодразделения.Form.ФормаДокумента1</defaultObjectForm>
+  <defaultObjectForm>Document.ПремияРуководителюПодразделения.Form.ФормаДокумента</defaultObjectForm>
   <realTimePosting>Deny</realTimePosting>
   <registerRecords>AccumulationRegister.ВзаиморасчетыСРаботниками</registerRecords>
   <registerRecords>CalculationRegister.Начисления</registerRecords>
@@ -144,20 +144,11 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="84cb4ab7-3ae5-4437-b942-2573ac30f5c3">
+  <forms uuid="8db0c98b-b1f1-42ec-802d-b4f08552bdf8">
     <name>ФормаДокумента</name>
     <synonym>
       <key>ru</key>
       <value>Форма документа</value>
-    </synonym>
-    <usePurposes>PersonalComputer</usePurposes>
-    <usePurposes>MobileDevice</usePurposes>
-  </forms>
-  <forms uuid="8db0c98b-b1f1-42ec-802d-b4f08552bdf8">
-    <name>ФормаДокумента1</name>
-    <synonym>
-      <key>ru</key>
-      <value>Форма документа1</value>
     </synonym>
     <usePurposes>PersonalComputer</usePurposes>
     <usePurposes>MobileDevice</usePurposes>
