@@ -74,7 +74,6 @@
   <enums>Enum.СостоянияФизическогоЛица</enums>
   <enums>Enum.СпособыРасчета</enums>
   <enums>Enum.ПроцентыВыплатыБольничного</enums>
-  <reports>Report.РасчетныеЛистки</reports>
   <dataProcessors>DataProcessor.КонсольЗапросов</dataProcessors>
   <dataProcessors>DataProcessor.ГрафическоеПредставлениеОсновныхНачислений</dataProcessors>
   <dataProcessors>DataProcessor.Перерасчет</dataProcessors>

@@ -12,7 +12,6 @@
   </picture>
   <content>DataProcessor.ГрафическоеПредставлениеОсновныхНачислений</content>
   <content>DataProcessor.Перерасчет</content>
-  <content>Report.РасчетныеЛистки</content>
   <subsystems>Документы</subsystems>
   <subsystems>ПланыВидовРасчета</subsystems>
   <subsystems>Справочники</subsystems>
