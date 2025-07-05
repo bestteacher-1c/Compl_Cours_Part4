@@ -22,6 +22,8 @@
   <numberAllowedLength>Variable</numberAllowedLength>
   <checkUnique>true</checkUnique>
   <autonumbering>true</autonumbering>
+  <defaultObjectForm>Document.ПремияРуководителюПодразделения.Form.ФормаДокумента</defaultObjectForm>
+  <registerRecords>CalculationRegister.Начисления</registerRecords>
   <postInPrivilegedMode>true</postInPrivilegedMode>
   <unpostInPrivilegedMode>true</unpostInPrivilegedMode>
   <attributes uuid="3791066c-6cf6-4f52-b9f6-0e1d1b9a1b80">
@@ -125,7 +127,21 @@
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>
-  <forms uuid="3e93eb89-0ba3-446c-b26b-02f72ec3ce3a">
+  <attributes uuid="65f2cb2e-690e-465f-8e3a-71a4f4be57fc">
+    <name>ГрафикРаботы</name>
+    <synonym>
+      <key>ru</key>
+      <value>График работы</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ВидыГрафиковРаботы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="4bddcb72-cc28-48b8-ade3-ec05b4fb7711">
     <name>ФормаДокумента</name>
     <synonym>
       <key>ru</key>
